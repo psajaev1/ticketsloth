@@ -1,0 +1,36 @@
+{% load humanize %}
+
+<article class="listing">
+  <header class="row">
+    <h4 class="col-xs-8"><a href="{{ listing.get_absolute_url }}">{{ listing.title }}</a></h4>
+    <h4 class="col-xs-4 listing-date">{{ listing.create_date|naturaltime }}</h4>
+  </header>
+  <section class="row">
+    <div class="col-sm-3 hidden-xs">
+      <img src="{{ listing.image.crop.160x132 }}"/>
+    </div>
+    <div class="col-xs-12 col-sm-9">
+      <div class="row">
+        <div class="col-xs-9 col-sm-10">
+
+          <h5>{% if listing.event %}<a href="{{listing.event.get_absolute_url}}">{{ listing.event.name }}</a> {% if listing.event.venue %} @ <a href="{{listing.event.venue.get_absolute_url}}">{{ listing.event.venue }}</a> {% endif %}
+              {% elif listing.bands %}{{ listing.bands }} {% if listing.venue %} @ {{ listing.venue }}{% endif %}{% else %}No event details{% endif %}</h5>
+
+          <div class="listing-description hidden-xs">{{ listing.description|truncatechars:100 }}</div>
+        </div>
+
+        <div class="col-xs-3 col-sm-2 ticket-price-holder">
+          <div class="ticket-price text-center"><h3>${{ listing.price|floatformat:"-2" }}</h3></div>
+          <div class="ticket-price-description"><b>{{ listing.available_tickets }} ticket{{ listing.available_tickets|pluralize }}</b></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 bottom-margin">
+          <a class="btn btn-success" href="{{ listing.get_absolute_url }}">More Details</a>
+          <span class="pull-right seller-info"><b>Seller:</b> <a
+                  href="{{ listing.seller.get_absolute_url }}">{{ listing.seller.username }}</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>

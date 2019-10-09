@@ -1,0 +1,26 @@
+<div class="otherLike">
+    <h2>YOU MAY ALSO LIKE THESE VENUES</h2>
+    <div class="container-fluid">
+        <div class="row">
+            {% for event in events %}
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="venue_card">
+                        <div class="headerImage"><img src="{{ event.venue.image.crop.350x350 }}"></div>
+                        <div class="info">
+                            <div class="col col1">
+                                <div class="city">{{ event.venue.name }}</div>
+                                <div class="des">{{ event.venue.bio }}</div>
+                                <div class="nEvents">{{ event.venue.upcoming_events.count }} events</div>
+                                <div class="prox">in the next month</div>
+                                <div class="upcoming"><span class="title">Upcoming: </span><span class="band">{{ event.venue.upcoming_events.first.bands }}</span></div><a class="redButton" href="{{ event.venue.get_absolute_url }}">See all events</a></div>
+                            <div class="col col2">
+                                <div class="adress">{{ event.venue.full_address }}</div><a class="getDir">GET DIRECTIONS</a>
+                                <iframe class="map" src="{{ event.venue.google_maps_uri }}" width="110" height="180" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+{% block title %}{{ object.title }}{% endblock %}
+
+{% block content %}
+
+<section class="mainCotainer" id="listingDetails">
+    <article>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-7">
+                    <div class="cardTitle">
+                        <div class="event">
+                            <div class="name">{{ticket.title}} @{{ticket.event.venue}}</div>
+                            <div class="date">{{ ticket.event_date }}</div>
+                        </div>
+                        <div class="info">
+                            <div class="price">${{ ticket.price|floatformat:"0" }}</div>
+                            <div class="available">{{ ticket.ticket_total }} ticket(s) available</div>
+                        </div>
+                    </div>
+                    <div class="seller"><img class="profilePic" src="{{ ticket.seller.image.thumbnail.80x80 }}">
+                        <div class="qual">
+                            <div class="name">{{ ticket.seller }}</div>
+                            <div class="stars">
+                                {% if ticket.seller.average_review_score >= 5 %}
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                {% elif ticket.seller.average_review_score >= 4 %}
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                {% elif ticket.seller.average_review_score >= 3 %}
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                {% elif ticket.seller.average_review_score >= 2 %}
+                                <div class="star"></div>
+                                <div class="star"></div>
+                                {% elif ticket.seller.average_review_score >= 1 %}
+                                <div class="star"></div>
+                                {% else %}
+                                <p>No Reviews</p>
+                                {% endif %}
+                            </div>
+                            <div class="num">({{ ticket.seller.reviews.count }})</div>
+                        </div>
+                        <div class="attributes">
+                            {% if ticket.seller.phone_verified %}
+                            <div class="attribute"><img src="/static/images/identity-verified.svg">
+                                <div class="verifyed">Identity Verified</div>
+                            </div>
+                            <!--<div class="attribute"><img src="/static/images/facebook-verified.svg">-->
+                            <!--<div class="verifyed">Facebook Verified</div>-->
+                            <!--</div>-->
+                            <div class="attribute"><img src="/static/images/phone-verified.svg">
+                                <div class="verifyed">Phone Verified</div>
+                            </div>
+                            {% else %}
+                            <p>Not verified</p>
+                            {% endif %}
+                        </div>
+                        <div class="des">{{ ticket.description }}</div>
+                        <div class="contactButton">
+                            <a href="/messages/inbox" type="button" class="btn btn-default redButton message-button">View Messages</a>
+                            <a href="{% url 'ticket_edit' ticket.pk %}" type="button" class="btn btn-default redButton outline message-button">Edit Listing</a>
+                            <a href="{% url 'ticket_delete' ticket.pk %}" type="button" class="btn btn-default redButton outline message-button">Delete Listing</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-1"></div>
+                <div class="col-xs-12 col-md-4 mmm">
+                    <div class="legendFeat container-fluid">
+                        <div class="legend">BUYING ON TICKETSLOTH IS SAFE, AFFORDABLE, AND RELIABLE</div>
+                        <div class="row buyingRow">
+                            <div class="col-xs-12">
+                                <div class="feat"><img src="/static/images/buyerprotection-icon.svg">
+                                    <div class="info">
+                                        <div class="title">BUYER PROTECTION</div>
+                                        <div class="des">It was a humorously perilous business for both of us.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="feat"><img src="/static/images/review-icon.svg">
+                                    <div class="info">
+                                        <div class="title">REVIEW SYSTEM</div>
+                                        <div class="des">It was a humorously perilous business for both of us.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="feat"><img src="/static/images/nofees-icon.svg">
+                                    <div class="info">
+                                        <div class="title">NO FEES</div>
+                                        <div class="des">It was a humorously perilous business for both of us.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+
+{% endblock %}

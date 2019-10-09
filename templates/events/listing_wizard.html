@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load staticfiles i18n %}
+
+{% block title %}New Event{% endblock %}
+{% block content %}
+    <h3>New Event</h3>
+    <form action="" method="post" class="row col-md-12">{% csrf_token %}
+    {{ wizard.management_form }}
+    {% if wizard.form.forms %}
+        {{ wizard.form.management_form }}
+        {% for form in wizard.form.forms %}
+            {% crispy form %}
+        {% endfor %}
+    {% else %}
+        {% crispy wizard.form %}
+    {% endif %}
+{% endblock %}
+
+
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/jquery.tagit.css' %}"/ >
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui.min.css' %}"/ >
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/jquery.datetimepicker.css' %}"/ >
+{% endblock %}
+
+
+{% block javascript %}
+
+
+<script src="{% static 'js/jquery.datetimepicker.js' %}"></script>
+
+<script src="{% static 'js/tag-it.min.js' %}"></script>
+<script src="{% static 'js/jquery.mask.min.js' %}"></script>
+<script src="{% static 'js/select2.min.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.4/jstz.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    setup_autocomplete('venue');
+    //setup_autocomplete('band');
+
+    $('#id_phone_number').mask('(000) 000-0000');
+    $('.start_time').datetimepicker({
+        scrollInput:false,
+        closeOnDateSelect:true,
+        format:'Y-m-d H:i:00',
+        step:30
+    });
+    $('.end_time').datetimepicker({
+        scrollInput:false,
+        closeOnDateSelect:true,
+        format:'Y-m-d H:i:00',
+        step:30
+    });
+
+    function setup_autocomplete(type_arg){
+        $('.'+type_arg+'_select').click(function () {
+            $.getJSON('/list/'+type_arg+'/').success(function (data) {
+                $('.'+type_arg+'_select').autocomplete({
+                    minLength: 0,
+                    source: data,
+                    focus: function( event, ui ) {
+                        $( '.'+type_arg+'_select' ).val( ui.item.label );
+                        return false;
+                    },
+                    select: function( event, ui ) {
+                        $( '.'+type_arg+'_select' ).val( ui.item.label );
+                        $( '.'+type_arg+'_field').val( ui.item.id );
+                        return false;
+                    }
+                }).autocomplete( 'instance' )._renderItem = function( ul, item ) {
+                    return $( '<li>' ).append( '<a><strong>' + item.label + '</strong><br>' + item.desc.substring(0,60) + '</a>' )
+                    .appendTo( ul );
+                };
+            });
+        });
+    }
+    $('.band_field').select2({
+  ajax: {
+    url: "/list/band/",
+    dataType: 'json',
+    delay: 250,
+    data: function (params) {
+      return {
+        q: params.term, // search term
+      };
+    },
+    processResults: function (data, page) {
+      // parse the results into the format expected by Select2.
+      // since we are using custom formatting functions we do not need to
+      // alter the remote JSON data
+      return {
+        results: data.items
+      };
+    },
+    cache: true
+  },
+    });
+
+    $.getJSON('/list/r_tag/').success(function (data) {
+
+      $('#tags').tagit({
+        tagSource:data,
+        maxTags: 3,
+        maxLength: 23,
+        placeholder: 'Enter summary tags',
+        minLength: 3
+      });
+
+    });
+
+
+});
+
+
+
+</script>
+
+{% endblock %}
+
+{% block  extrahead %}
+    <link rel="stylesheet" href="{% static 'css/select2.min.css' %}">
+{% endblock %}

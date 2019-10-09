@@ -1,0 +1,9 @@
+{{ object.title }}
+{{ object.seller.username }}
+{{ object.get_band_display }}
+{{ object.get_venue_display }}
+{% for tag in object.tags.all %}
+{{ tag.name }}
+{% endfor %}
+
+{{ object.description }}

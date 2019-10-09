@@ -1,0 +1,23 @@
+<div class="recentListing">
+    <a href="{{ listing.get_absolute_url }}">
+        <div class="recentInfo"><img class="artist" src="{{ listing.event.image.thumbnail.80x80 }}">
+            <div class="realName">
+                <div class="name">{{ listing.get_list_title }}</div>
+                <div class="date">{{ listing.get_venue_display }} {{ listing.event_date|date:"M d" }}</div>
+            </div>
+            <div class="infoCont">
+                <div class="comp price">${{ listing.price|floatformat:"0" }}</div>
+                <div class="comp tickets">
+                    <div class="x">x{{ listing.ticket_total }}</div>
+                    <div class="des">ticket(s)</div>
+                </div>
+            </div>
+        </div>
+    </a>
+    <div class="recentButtons">
+        <a href="{{ listing.get_absolute_url }}">
+        </a>
+        <div class="infoCont">
+            <a class="redButton" href="{{ listing.get_absolute_url }}">Buy Tickets</a></div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+{% regroup events_list by start_time|date:"D M j" as events_by_day %}
+{% for day in events_by_day %}
+
+{% for event in day.list %}
+    <a href="{{ event.get_absolute_url }}">
+
+        <div class="upcomingList container-fluid">
+
+            <div class="row">
+                <div class="col-xs-2 col-sm-1 date">
+                    <div class="month">{{ day.grouper|slice:"4:7" }}</div>
+                    <div class="numberDay">{{ day.grouper|slice:"8:" }}</div>
+                    <div class="day">{{ day.grouper|slice:":3" }}</div>
+                </div>
+
+                <div class="col-xs-3 col-sm-5 artistCont">
+                    <div class="artist">{{ event.bands }}</div>
+                    <div class="hour">{{ event.start_time|date:"P" }}</div>
+                </div>
+                <div class="col-xs-3 col-sm-3 fromCont">
+                    <div class="from"> FROM <span class="price">${{ event.get_cheapest_price|floatformat:"0" }}</span></div>
+                </div>
+                <div class="col-xs-4 col-sm-3 ticketsCont">
+                    <a href="{{ event.get_absolute_url }}" class="redButton white">Find tickets</a>
+                </div>
+
+            </div>
+        </div>
+    </a>
+{% endfor %}
+    {% empty %}
+    <div class="col-md-12">
+        There aren't any events on the calendar yet.
+    </div>
+{% endfor %}
+{% if is_paginated %}
+    <nav class="centered">
+        {% include 'partial/pagination.html' %}
+    </nav>
+{% endif %}

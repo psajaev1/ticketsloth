@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<p>Write a review of your transaction with {{ target.username }} for your purchase of tickets for {{ transaction.event.title }}
+
+                {% csrf_token %}
+                {% crispy form %}
+
+<div class="col-xs-12 col-md-12 whitespace-margin"></div> 
+
+{% endblock %}
+
+{% block styles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui.min.css' %}"/ >
+{% endblock %}
+
+

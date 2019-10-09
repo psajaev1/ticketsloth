@@ -1,0 +1,26 @@
+<div class="panel panel-default" id="ListingTable">
+
+    <div class="table-responsive">
+        <table class = "table table-striped table-bordered">
+        <thead>
+
+            <tr>
+            <th>Listings... <a href="{% url 'owner_list_view' user.pk %}">see all</a></th>
+            <th># left</th>
+            <th>Event</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            {% for item in user.tickets_for_sale.all|slice:":10" %}
+            <tr>
+            <td><a href="{{ item.get_absolute_url }}"> {{item.title}}</a></td>
+            <td>{{ item.available_tickets }}</td>
+            <td><a href="{{ item.event.get_absolute_url }}">{{item.event.name}}</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+    </div>
+</div>
+

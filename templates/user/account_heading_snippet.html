@@ -1,0 +1,11 @@
+    <div class="row">
+        <img src="{{ account.image.crop.370x370 }}" alt="{{ account.username }}" class="col-md-4">
+        <div class = "col-md-8">
+            <h4 > <a href = '{{ account.get_absolute_url }}'>{{account.username}}</a> - {% if account.reviews.count == 0 %}No{% else %}{{ account.average_review_score }} / 3 ({{ account.reviews.count }}){% endif %} review{{ account.reviews.count|pluralize }} </h4>
+            <br>
+            {% block heading_content %}
+            {% endblock %}
+
+        </div>
+    </div>
+

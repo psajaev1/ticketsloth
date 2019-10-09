@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load event_tags %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+    <section class="mainCotainer" id="home">
+        <article></article>
+        <div class="legendFeat container-fluid">
+            <div class="legend">TICKETSLOTH IS A NEW WAY TO BUY AND SELL TICKETS</div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="feat"><img src="static/images/review-icon.svg">
+                        <div class="info">
+                            <div class="title">REVIEW SYSTEM</div>
+                            <div class="des">It was a humorously perilous business for both of us.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="feat"><img src="static/images/nofees-icon.svg">
+                        <div class="info">
+                            <div class="title">NO FEES</div>
+                            <div class="des">It was a humorously perilous business for both of us.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="feat"><img src="static/images/setprice-icon.svg">
+                        <div class="info">
+                            <div class="title">SET YOUR PRICE</div>
+                            <div class="des">It was a humorously perilous business for both of us.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="feat"><img src="static/images/musicevents-icon.svg">
+                        <div class="info">
+                            <div class="title">ALL TYPES OF EVENTS</div>
+                            <div class="des">It was a humorously perilous business for both of us.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upcomingCardsCont">
+            {% for event in events_list %}
+                {% include "events/event_upcoming_item.html" %}
+            {% endfor %}
+        </div>
+        <div class="recentCont">
+            <h2>MOST RECENT LISTINGS IN <span class="accent">{{ request.region.name }}</span></h2>
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <div class="list">
+                        {% for listing in listing_list %}
+                            {% include "listings/listing_list_item.html" %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="otherLike">
+            <h2>YOU MAY ALSO LIKE</h2>
+            {% you_may_also_like request.region 9 %}
+        </div>
+    </section>
+{% endblock %}

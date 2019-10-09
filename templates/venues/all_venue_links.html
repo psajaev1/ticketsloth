@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+{% block title %}Venues{% endblock %}
+{% block content %}
+
+<section class="mainCotainer" id="venue">
+    <article>
+        <div class="principalRow"><a class="redButton" href="{% url 'create_venue' %}">Add new Venue</a></div>
+        <h2> ALL VENUES IN <span class="accent">{{ request.region.name }}</span></h2>
+        <div class="venuesCont container-fluid">
+            <div class="row">
+                {% for venue in venue_list %}
+                {% include 'venues/venue_list_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+        <nav class="centered">
+            {% include 'partial/pagination.html' %}
+        </nav>
+    </article>
+</section>
+
+
+
+
+{% endblock %}

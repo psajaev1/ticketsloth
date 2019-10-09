@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+{% load humanize %}
+{% load crispy_forms_tags %}
+
+{% block title %}{% if query %}Search Results{% else %}Listings{% endif %}{% endblock %}
+
+{% block content %}
+    {% if query %}
+        <h3>Results for {{ query }}</h3>
+    {% endif %}
+        <section class="mainCotainer" id="listings">
+            <article>
+                <h2> MOST RECENT LISTINGS IN <span class="accent">{{ request.region.name }}</span></h2>
+                <div class="list">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8">
+                            <div class="list">
+                                {% for result in object_list %}
+                                    {% include 'listings/listing_list_item.html' with listing=result.object %}
+                                {% endfor %}
+                            </div>
+                            <nav class="centered">
+                                {% include 'partial/pagination.html' %}
+                            </nav>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <form id="search-filter-form" class="listFilter" method="get">
+                                <label>Price:</label>
+                                <div id="priceRange"></div>
+                                {{ form }}
+                                <button class="submit-button btn btn-block" type="submit">Filter</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="otherLike">
+                    <h2>YOU MAY ALSO LIKE</h2>
+                    {% you_may_also_like request.region 3 %}
+                </div>
+            </article>
+        </section>
+    {% if listings.count > 0 %}
+        <section class="mainCotainer" id="listings">
+            <article>
+                <div class="list">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8">
+                            <div class="list tab-content">
+                                <div class="tab-pane fade in active" id="listings">
+                                    {% for result in object_list %}
+                                        {% include 'listings/listing_list_item.html' with listing=result.object %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    {% endif %}
+{% endblock %}
+
+{% block javascript %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var priceRange = document.getElementById('priceRange');
+            noUiSlider.create(priceRange, {
+                start: [0, 1000],
+                connect: true,
+                range: {
+                    'min': 0,
+                    'max': 1000
+                },
+                format: {
+                    to: function (value) {
+                        return '$' + parseInt(value);
+                    },
+                    from: function (value) {
+                        return value.replace('$', '');
+                    }
+                },
+                tooltips: true
+            });
+            priceRange.noUiSlider.on('update', function (values, handle) {
+                $("#id_minimum_price").val(parseInt(values[0].replace('$', '')));
+                $("#id_maximum_price").val(parseInt(values[1].replace('$', '')));
+            });
+
+        });
+    </script>
+{% endblock %}

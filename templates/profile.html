@@ -1,0 +1,248 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+
+{% block title %}My Tickets{% endblock %}
+
+{% block content %}
+<section class="mainCotainer" id="selfProfile">
+    <article>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <div class="profile_card">
+                        <div class="name">{{ account.username }}</div>
+                        <div class="profilePic"><img src="{{ account.image.crop.370x370 }}"></div>
+                        <div class="des">{{ account.bio }}</div>
+                        <div class="attributes">
+
+                            {% if account.phone_verified %}
+                            <div class="attribute"><img src="/static/images/identity-verified.svg">
+                                <div class="title">Identity<br>Verified</div>
+                            </div>
+                            <!--<div class="attribute"><img src="/static/images/facebook-verified.svg">-->
+                            <!--<div class="verifyed">Facebook Verified</div>-->
+                            <!--</div>-->
+                            <div class="attribute"><img src="/static/images/phone-verified.svg">
+                                <div class="title">Phone<br>Verified</div>
+                            </div>
+                            <!--<div class="attribute"><img src="/static/images/completed-sales.svg">-->
+                            <!--<div class="title"> completed-->
+                            <!--<br>deals</div>-->
+                            <!--</div>-->
+                            {% else %}
+                            <p>Not verified</p>
+                            {% endif %}
+
+                        </div>
+                        {% if request.user.is_authenticated %}
+                        <a href="{% url 'postman:write' account %}" type="button"
+                           class="btn btn-default redButton message-button">Contact the Seller</a>
+                        {% else %}
+                        <a href="{% url 'account_login' %}" type="button"
+                           class="btn btn-default red Button message-button">Login to contact the Seller</a>
+
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-1"></div>
+                <div class="col-xs-12 col-md-7 mmm">
+                    <ul class="nav nav-tabs" id="tabs">
+                        <li class="active"><a href="#sale" data-toggle="tab">TICKETS ON SALE</a></li>
+                        <li><a href="#purchases" data-toggle="tab">PURCHASES</a></li>
+                        <li><a href="#past" data-toggle="tab">PAST SALES</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="sale">
+                            <div class="list">
+                                {% for item in account.tickets_for_sale.all %}
+                                <div class="recentListing profile">
+                                    <a href="{{ item.get_absolute_url }}">
+                                        <div class="recentInfo"><img class="artist" src="{{ item.event.image.thumbnail.80x80 }}">
+                                            <div class="realName">
+                                                <div class="name">{{ item.get_list_title }}</div>
+                                                <div class="date">{{ item.get_venue_display }} {{ item.event_date|date:"M d" }}</div>
+                                            </div>
+                                            <div class="infoCont">
+                                                <div class="comp price">${{ item.price|floatformat:"0" }}</div>
+                                                <div class="comp tickets">
+                                                    <div class="x">x{{ item.ticket_total }}</div>
+                                                    <div class="des">ticket(s)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="recentButtons">
+                                        <a href="{{ item.get_absolute_url }}">
+                                        </a>
+                                        <div class="infoCont">
+                                            <a class="redButton outline" href="{{ item.get_absolute_url }}">Edit Listing</a></div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="purchases">
+                            <div class="list">
+                                {% if account.purchases.all %}
+                                {% for transaction in purchases %}
+                                <div class="recentListing profile">
+                                    <a href="{{ transaction.ticket.get_absolute_url }}">
+                                        <div class="recentInfo"><img class="artist" src="{{ transaction.ticket.event.image.thumbnail.80x80 }}">
+                                            <div class="realName">
+                                                <div class="name">{{ transaction.ticket.get_list_title }}</div>
+                                                <div class="date">{{ transaction.ticket.get_venue_display }} {{ transaction.ticket.event_date|date:"M d" }}</div>
+                                            </div>
+                                            <div class="infoCont">
+                                                <div class="comp price">${{ transaction.ticket.price|floatformat:"0" }}</div>
+                                                <div class="comp tickets">
+                                                    <div class="x">x{{ transaction.ticket.ticket_total }}</div>
+                                                    <div class="des">ticket(s)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="recentButtons">
+                                        <a href="{{ transaction.ticket.get_absolute_url }}">
+                                        </a>
+                                        <div class="infoCont">
+                                            <a class="redButton" href="{{ transaction.ticket.get_absolute_url }}">Buy Tickets</a></div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                {% else %}
+                                You haven't bought any tickets yet
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="past">
+                            <div class="list">
+                                {% if account.sales.all %}
+                                {% for transaction in purchases %}
+                                <div class="recentListing profile">
+                                    <a href="{{ transaction.ticket.get_absolute_url }}">
+                                        <div class="recentInfo"><img class="artist" src="{{ transaction.ticket.event.image.thumbnail.80x80 }}">
+                                            <div class="realName">
+                                                <div class="name">{{ transaction.ticket.get_list_title }}</div>
+                                                <div class="date">{{ transaction.ticket.get_venue_display }} {{ transaction.ticket.event_date|date:"M d" }}</div>
+                                            </div>
+                                            <div class="infoCont">
+                                                <div class="comp price">${{ transaction.ticket.price|floatformat:"0" }}</div>
+                                                <div class="comp tickets">
+                                                    <div class="x">x{{ transaction.ticket.ticket_total }}</div>
+                                                    <div class="des">ticket(s)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="recentButtons">
+                                        <a href="{{ transaction.ticket.get_absolute_url }}">
+                                        </a>
+                                        <div class="infoCont">
+                                            <a class="redButton" href="{{ transaction.ticket.get_absolute_url }}">Buy Tickets</a></div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                {% else %}
+                                You haven't sold any tickets yet
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviesContainer container-fluid">
+            <div class="row">
+                <div class="mCol col-xs-12 col-md-4">
+                    <div class="legendFeat container-fluid">
+                        <div class="legend">BUYING ON TICKETSLOTH IS SAFE, AFFORDABLE, AND RELIABLE</div>
+                        <div class="row buyingRow">
+                            <div class="col-xs-12">
+                                <div class="feat"><img src="/static/images/buyerprotection-icon.svg">
+                                    <div class="info">
+                                        <div class="title">BUYER PROTECTION</div>
+                                        <div class="des">It was a humorously perilous business for both of us.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="feat"><img src="/static/images/review-icon.svg">
+                                    <div class="info">
+                                        <div class="title">REVIEW SYSTEM</div>
+                                        <div class="des">It was a humorously perilous business for both of us.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="feat"><img src="/static/images/nofees-icon.svg">
+                                    <div class="info">
+                                        <div class="title">NO FEES</div>
+                                        <div class="des">It was a humorously perilous business for both of us.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-1"></div>
+                <div class="mCol col-xs-12 col-md-7">
+                    <div class="reviews">
+                        <h2>{{ account.reviews.count }} REVIEW(S)
+                            <!--<div class="stars">-->
+                                <!--{% if account.average_review_score >= 5 %}-->
+                                <!--<div class="star"></div>-->
+                                <!--<div class="star"></div>-->
+                                <!--<div class="star"></div>-->
+                                <!--<div class="star"></div>-->
+                                <!--<div class="star"></div>-->
+                                <!--{% elif account.average_review_score >= 4 %}-->
+                                <!--<div class="star"></div>-->
+                                <!--<div class="star"></div>-->
+                                <!--<div class="star"></div>-->
+                                <!--<div class="star"></div>-->
+                                <!--{% elif account.average_review_score >= 3 %}-->
+                                <!--<div class="star"></div>-->
+                                <!--<div class="star"></div>-->
+                                <!--<div class="star"></div>-->
+                                <!--{% elif account.average_review_score >= 2 %}-->
+                                <!--<div class="star"></div>-->
+                                <!--<div class="star"></div>-->
+                                <!--{% elif account.average_review_score >= 1 %}-->
+                                <!--<div class="star"></div>-->
+                                <!--{% else %}-->
+                                <!--<p>No Reviews</p>-->
+                                <!--{% endif %}-->
+                            <!--</div>-->
+                        </h2>
+                        <div class="hDivider"></div>
+                        {% for review in account.reviews.all|slice:":3" %}
+                        <div class="reviewListing">
+                            <div class="author"><img src="{{ review.creator.image.thumbnail.150x150 }}">
+                                <div class="name">{{ review.creator.username }}</div>
+                            </div>
+                            <div class="review">
+                                <img class="trian" src="/static/images/blanktrian2.png">
+                                <div class="reviewText">{{ review.message }}</div>
+                                <div class="date">{{ review.created_at|date:"F jS Y" }}</div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                        <div class="buttons">
+                            <a href="{% url 'all_reviews_view' user.pk %}" class="redButton outline">SEE ALL REVIEWS</a>
+                        </div>
+                    </div>
+                    <nav class="centered">
+                        {% include 'partial/pagination.html' %}
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="otherLike">
+            <h2>YOU MAY ALSO LIKE</h2>
+            {% you_may_also_like request.region 3 %}
+        </div>
+    </article>
+</section>
+{% endblock %}
+

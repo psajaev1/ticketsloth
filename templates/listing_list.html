@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load humanize %}
+{% load crispy_forms_tags %}
+
+{% block title %}Listings{% endblock %}
+
+{% block content %}
+  <h3>Grab these {{ request.region.name }} tickets - or <a href = "{% url 'post' %}">add your own</a></h3>
+  <div class="row ">
+    <div class="col-md-3">
+      <h3 class="filter-head">Filters</h3>
+      <form id="ticket-filter-form" method="post" action="{% url 'ticket_search' %}">
+        {% crispy form %}
+      </form>
+    </div>
+    <div class="col-md-9">
+      {% for listing in ticket_list %}
+        {% include 'partial/listing_listitem.html' %}
+      {% endfor %}
+
+    </div>
+  </div>
+
+  {% include 'partial/pagination.html' %}
+
+{% endblock %}
