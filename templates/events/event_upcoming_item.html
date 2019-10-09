@@ -1,0 +1,11 @@
+<div class="upcoming_card">
+    <div class="info">
+        <div class="date">{{ event.start_time }}</div>
+        <div class="title">{{ event.bands }} @{{ event.venue.name }}</div>
+        <div class="des">{{ event.bio }}</div>
+        <div class="buttons"><a class="redButton" href="{{ event.get_absolute_url }}">See Tickets</a><div class="redButton outline add-to-wishlist" data-event="{{ event.pk }}">Wishlist</div></div>
+    </div>
+    <div class="image" style="background:url( '{{ event.image.thumbnail.300x300 }}' )">
+        <div class="tag">UPCOMING EVENTS</div>
+    </div>
+</div>

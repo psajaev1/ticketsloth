@@ -1,0 +1,22 @@
+<div class="MayLikeCardCont col-xs-12 col-sm-6 col-lg-4">
+    <div class="MayLikeCard">
+        <div class="info">
+            <div class="date">{{ event.start_time|date:"M d" }}</div>
+            <div class="artist">{{ event.bands }} @{{ event.venue }}</div>
+            <div class="des">{{ event.bio }}
+            </div>
+            <div class="buttons">
+                <div class="redButton"><a href="{{ event.get_absolute_url }}">See tickets</a></div>
+                <div class="redButton outline add-to-wishlist" data-event="{{ event.pk }}">Save for later</div>
+            </div>
+        </div>
+        <div class="image"><img src="{{ event.image.thumbnail.250x250 }}">
+            <div class="over">
+                <div class="text">
+                    <div class="from">From</div>
+                    <div class="price">${{ event.get_cheapest_price|floatformat:"0" }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

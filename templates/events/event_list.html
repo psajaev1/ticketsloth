@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+
+{% block title %}Events{% endblock %}
+
+{% block content %}
+    <section class="mainCotainer" id="events">
+        <article>
+            <h2> FEATURED EVENTS IN <span class="accent">CHICAGO</span></h2>
+            <div class="upcomingCardsCont">
+                {% for event in featured_events %}
+                    {% include "events/event_upcoming_item.html" %}
+                {% endfor %}
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    {% for event in event_list %}
+                        {% include 'events/event_list_item.html' %}
+                    {% endfor %}
+                </div>
+            </div>
+            <nav class="centered">
+                {% include 'partial/pagination.html' %}
+            </nav>
+        </article>
+    </section>
+
+{% endblock %}
+
+{% block javascript %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#events-list').dataTable();
+        });
+    </script>
+{% endblock %}

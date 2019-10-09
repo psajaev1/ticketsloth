@@ -1,0 +1,2568 @@
+.navbar-default .navbar-nav a:hover {
+  font-weight: 600 !important; }
+
+.mainCotainer {
+  margin: 0 auto;
+  max-width: 1140px;
+  color: #1f292e; }
+  .mainCotainer .container-fluid {
+    padding-left: 0;
+    padding-right: 0; }
+
+.accent {
+  color: #7a22a3;
+  font-weight: bold;
+text-transform:uppercase;}
+
+.logo {
+  font-size: 24px;
+  padding-left: 15px; }
+
+.main {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff !important;
+  font-weight: 600; }
+
+.navbar-default .navbar-toggle {
+  background-color: white; }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: rgba(150, 110, 121, 0.42); }
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: rgba(150, 110, 121, 0.42);
+  font-weight: bold;
+  color: white; }
+
+.navbar-default .my_profile_menu {
+  text-transform: none;
+  cursor: pointer; }
+  .navbar-default .my_profile_menu .dropdown-toggle .rPic {
+    vertical-align: middle; }
+  .navbar-default .my_profile_menu .dropdown-toggle .myName {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-weight: 600; }
+    .navbar-default .my_profile_menu .dropdown-toggle .myName .caret {
+      margin-left: 35px;
+      border-top: 7px dashed;
+      border-right: 8px solid transparent;
+      border-left: 8px solid transparent; }
+  .navbar-default .my_profile_menu .dropdown-menu {
+    border-radius: 0 0 4px 4px; }
+    .navbar-default .my_profile_menu .dropdown-menu li a {
+      letter-spacing: 0;
+      color: #9495a6;
+      padding: 6px 14px; }
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: white; }
+
+#search {
+  position: relative;
+  font-size: 18px;
+  padding-top: 20px; }
+  #search .searchContainer {
+    position: relative;
+    background: white;
+    max-width: 466.5px;
+    border-color: red;
+    border-radius: 22.5px;
+    margin: 0 auto; }
+    #search .searchContainer .glyphicon {
+      position: absolute;
+      right: 21px;
+      color: #ee190b;
+      margin-top: 10px;
+      background: url("../images/magnifying-glass.svg");
+      width: 20px;
+      height: auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: transparent; }
+  #search .input-lg {
+    border-radius: 22.5px;
+    height: 40px;
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 1.3333333;
+    border: solid 1px #dadfe6;
+    margin: auto; }
+    #search .input-lg:focus {
+      border-color: #ee190b; }
+
+body {
+  background-color: #F9F9FB;
+  padding-bottom: 1.25em;
+  font-family: 'Open Sans'; }
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: white;
+  background-color: transparent; }
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  padding-top: 30px;
+  padding-bottom: 27px; }
+
+.container.background-top {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(122, 34, 163, 0.8)), linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  width: 100%;
+  min-height: 120px;
+  background-size: cover;
+  padding-top: 20px;
+  background-position: center center;
+  padding: 0;
+  margin-bottom: 55px; }
+
+.container .mainTitle {
+  margin-top: 45px;
+  text-align: center;
+  color: white;
+  font-size: 28px; }
+
+.navbar-default .navbar-brand {
+  color: white; }
+
+.navbar-default .navbar-nav > li > a {
+  color: white; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: white !important; }
+
+.text {
+  /* margin-top: 2em */
+  margin: 30px 0px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  display: inline-block;
+  padding-left: 15px; }
+
+.form-control:focus {
+  border-color: #EE190B;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+
+.right {
+  float: right;
+  margin-right: 7px; }
+
+.left {
+  float: left; }
+
+.mtop2 {
+  margin-top: 2em !important; }
+
+.mtop1 {
+  margin-top: 1em; }
+
+.wrapper {
+  background: #F5FAFF; }
+
+.subtitles {
+  font-size: 27px;
+  color: #1f292e; }
+
+.centered {
+  text-align: center;
+  display: inherit; }
+
+.img-centered {
+  margin: 0 auto;
+  display: flex; }
+
+.testimonial {
+  background: #9495a6;
+  min-height: 550px; }
+
+/*BUTTONS*/
+button.btn-custom {
+  background: #ee190b;
+  color: white;
+  border: 1px solid #ee190b;
+  border-radius: 2.3px;
+  height: 29px;
+  width: auto;
+  font-size: 12px; }
+
+button.btn-custom1 {
+  background: #ee190b;
+  color: white;
+  border: 1px solid #ee190b;
+  border-radius: 2.3px;
+  height: 29px;
+  width: 100%;
+  font-size: 12px; }
+
+.btn-purple {
+  width: 60px;
+  height: auto;
+  font-size: 10px;
+  color: white;
+  border-radius: 10px;
+  background-color: #7a22a3;
+  border: 1px solid #7a22a3; }
+
+/*FONTS*/
+.font10 {
+  font-size: 10px;
+  line-height: 20px; }
+
+.font11 {
+  font-size: 11px; }
+
+.font18 {
+  font-weight: bold;
+  font-size: 18px; }
+
+.font13 {
+  font-size: 13px; }
+
+.font8 {
+  font-size: 8px; }
+
+.font28 {
+  font-size: 28px; }
+
+.font27 {
+  font-size: 27px;
+  color: #ffffff; }
+
+.font34 {
+  font-size: 34px; }
+
+.purple {
+  color: #7a22a3; }
+
+.font14 {
+  font-size: 14px; }
+
+.font12 {
+  font-size: 12px; }
+
+.rPic {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 50%;
+  overflow: hidden; }
+  .rPic img {
+    width: 100%; }
+
+.tags .tag {
+  display: inline-block;
+  vertical-align: top;
+  background: #7a22a3;
+  color: white;
+  text-transform: uppercase;
+  padding: 3px 11px;
+  font-size: 12px;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-weight: bold; }
+
+@media screen and (max-width: 1150px) {
+  .mainCotainer {
+    padding: 0 1em;
+    box-sizing: border-box;
+    overflow: hidden; } }
+
+@media screen and (max-width: 993px) {
+  .mmm {
+    margin-top: 60px; } }
+
+@media screen and (max-width: 768px) {
+  .navbar-default .my_profile_menu .dropdown-menu {
+    background: white; } }
+
+.modal-content {
+  background: #f5faff; }
+  .modal-content .modal-header {
+    margin-top: 15px;
+    border: none;
+    font-size: 18px;
+    text-align: center; }
+  .modal-content .modal-body .sellerPic {
+    margin-right: 16px;
+    border-radius: 50%;
+    width: 68px;
+    height: 68px; }
+  .modal-content .modal-body .sellerInfo {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 600; }
+    .modal-content .modal-body .sellerInfo .event {
+      font-size: 16px; }
+    .modal-content .modal-body .sellerInfo .date {
+      font-size: 12px; }
+    .modal-content .modal-body .sellerInfo .price {
+      font-weight: bold;
+      color: #59b365;
+      letter-spacing: -0.3px; }
+  .modal-content .modal-body .usefull .title {
+    color: #7a22a3;
+    font-size: 12px;
+    font-weight: 600; }
+  .modal-content .modal-body .usefull ul {
+    padding: 20px; }
+    .modal-content .modal-body .usefull ul li {
+      line-height: 1.8; }
+  .modal-content .modal-body textarea {
+    border: 1px solid #dadfe6;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px 15px; }
+  .modal-content .modal-body .trian {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 18px;
+    bottom: 6px; }
+  .modal-content .modal-footer {
+    border: none; }
+    .modal-content .modal-footer .mPic {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      float: left;
+      position: relative;
+      left: 10px;
+      bottom: 20px; }
+
+@media screen and (max-width: 767px) {
+  .modal-body .container-fluid {
+    text-align: center; }
+  .modal-body .usefull li {
+    list-style: none; } }
+
+#home .upcomingCardsCont {
+  margin-top: 55px;
+  margin-bottom: 60px; }
+
+#home .recentCont {
+  padding-bottom: 55px; }
+  #home .recentCont .row {
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0; }
+    #home .recentCont .row .col-xs-12.col-md-8 {
+      padding: 0; }
+  #home .recentCont .testimonial {
+    background: #9495a6;
+    min-height: 550px; }
+
+#home .otherLike {
+  margin-bottom: 227px; }
+  #home .otherLike .container-fluid {
+    padding-right: 0;
+    padding-left: 0; }
+
+@media screen and (max-width: 991px) {
+  #home .recentCont .row .col-xs-12.col-md-4 {
+    padding: 0; } }
+
+#events .upcomingCardsCont {
+  margin-bottom: 40px; }
+
+#events .container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+#venue .principalRow {
+  width: 100%;
+  height: 1px; }
+  #venue .principalRow .redButton {
+    font-size: 12px;
+    padding: 6px 18px;
+    float: right; }
+
+#venue .container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+#listings .list .row {
+  padding: 0; }
+
+#listings .otherLike .container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+#login button.btn-login,
+#login button.btn-signin {
+  background: #ee190b;
+  color: white;
+  border: 1px solid #ee190b;
+  border-radius: 2.3px;
+  height: 60px;
+  width: 100%;
+  margin-top: 20px; }
+
+#login button.btn-signin {
+  margin-top: 0px;
+  margin-bottom: 89px; }
+
+#login .line {
+  width: 84px;
+  height: 1px;
+  background: #9495a6;
+  display: inline-block;
+  vertical-align: middle; }
+
+#login .font-login {
+  font-weight: bold;
+  letter-spacing: 0.8px; }
+  #login .font-login div {
+    display: inline-block;
+    vertical-align: middle; }
+  #login .font-login .copy {
+    margin: 16px 15px;
+    font-size: 10px; }
+
+#login .f-login {
+  color: #1f292e;
+  font-weight: 700; }
+
+#login .fbRectangle {
+  width: 184px;
+  height: 42px;
+  color: white;
+  margin: 0 auto;
+  border-radius: 2.8px;
+  background-color: #43609c;
+  text-align: center;
+  display: block;
+  line-height: 42px;
+  margin-bottom: 24px; }
+  #login .fbRectangle span {
+    line-height: 42px;
+    display: block;
+  }
+  #login .fbRectangle img {
+    margin-right: 12px; }
+
+#login .form-login {
+  font-size: 0;
+  font-size: 20px;
+  width: 328px;
+  margin: 0 auto; }
+  #login .form-login .inputContainer {
+    height: 70px;
+    line-height: 70px;
+    vertical-align: middle;
+    border: solid 1px #dadfe6;
+    text-indent: 10%;
+    background: white;
+    position: relative; }
+    #login .form-login .inputContainer input {
+      font-size: 18px;
+      border: none;
+      height: 100%;
+      padding-left: 20%;
+      float: right; }
+
+#login .top-input {
+  border-radius: 3px 3px 0px 0px; }
+
+#login .bottom-input {
+  border-radius: 0px 0px 3px 3px; }
+
+#login .icon_key {
+  top: 37.3%;
+  left: 8%;
+  position: absolute; }
+
+#login .icon_user {
+  position: absolute;
+  top: 33.3%;
+  left: 8%; }
+
+#login .littleButtons {
+  font-size: 12px;
+  margin-top: 16px; }
+  #login .littleButtons label {
+    color: #9495a6;
+    font-weight: normal;
+    margin-left: 6px; }
+  #login .littleButtons input {
+    margin-left: 0;
+    margin-top: 2px; }
+  #login .littleButtons a {
+    color: #ee190b; }
+
+#login .terms {
+  padding-top: 10px; }
+  #login .terms label {
+    font-weight: normal;
+    display: inline-block;
+    width: 90%;
+    vertical-align: top;
+    margin-left: 5%; }
+  #login .terms .term {
+    font-size: 12px;
+    padding: 10px 0; }
+
+@media screen and (max-width: 360px) {
+  #login .line {
+    width: 22%; }
+  #login .form-login {
+    width: 100%; } }
+
+#listingHome article {
+  overflow: hidden; }
+
+#listingHome .container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+#listingHome .testimonial {
+  background: #9495a6;
+  height: 111px;
+  width: 100%;
+  margin: 60px 0; }
+
+#venueDetails .list {
+  padding-top: 72px; }
+  #venueDetails .list a, #venueDetails .list a:hover, #venueDetails .list a:visited {
+    color: inherit; }
+
+#venueDetails .featured .MayLikeCardCont {
+  padding: 0; }
+
+#venueDetails .otherLike {
+  padding-top: 60px; }
+
+@media screen and (min-width: 992px) {
+  #venueDetails .featured .MayLikeCardCont, #eventsDetails .featured .MayLikeCardCont {
+    width: 100%; } }
+
+#profile .reviesContainer .mCol {
+  padding-top: 56px; }
+
+#profile .reviesContainer h2 {
+  margin-top: 0; }
+
+#profile .stars {
+  margin-left: 14px;
+  display: inline-block;
+  vertical-align: bottom; }
+  #profile .stars .star {
+    display: inline-block;
+    vertical-align: top;
+    background: url("/static/images/star.svg") no-repeat;
+    background-size: auto 100%;
+    width: 23px;
+    height: 23px; }
+    #profile .stars .star.empty {
+      background: url("/static/images/star.svg") no-repeat;
+      background-size: auto 99%; }
+
+#profile .otherLike {
+  margin-top: 185px; }
+
+#messages .otherLike {
+  margin-top: 60px; }
+
+@media screen and (max-width: 992px) {
+  #messages .messagesCard {
+    margin-bottom: 60px; } }
+
+#conversations .conversationsList {
+  max-width: 946px;
+  margin: 0 auto;
+  margin-bottom: 106px; }
+
+#conversations .byListingSub {
+  margin-bottom: 50px; }
+  #conversations .byListingSub .subName {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 5px; }
+  #conversations .byListingSub .green {
+    color: #11c929; }
+
+#listingDetails .cardTitle {
+  background: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  padding: 25px; }
+  #listingDetails .cardTitle .event, #listingDetails .cardTitle .info {
+    display: inline-block;
+    vertical-align: top; }
+  #listingDetails .cardTitle .event {
+    width: 59%; }
+    #listingDetails .cardTitle .event .name {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 5px; }
+    #listingDetails .cardTitle .event .date {
+      font-size: 14px;
+      color: #9495a6; }
+  #listingDetails .cardTitle .info {
+    text-align: right;
+    width: 40%;
+    border-left: 2px dotted #dfdfdf; }
+    #listingDetails .cardTitle .info .price {
+      color: #59b365;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: -0.4px; }
+    #listingDetails .cardTitle .info .available {
+      font-size: 14px; }
+
+#listingDetails .seller {
+  margin-top: 20px; }
+  #listingDetails .seller .qual, #listingDetails .seller .attributes, #listingDetails .seller .attribute, #listingDetails .seller .stars, #listingDetails .seller .num, #listingDetails .seller .verifyed {
+    display: inline-block;
+    vertical-align: top; }
+  #listingDetails .seller .profilePic {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px; }
+  #listingDetails .seller .qual {
+    margin-right: 50px; }
+    #listingDetails .seller .qual .name {
+      font-size: 18px; }
+    #listingDetails .seller .qual .star {
+      width: 17px;
+      height: 17px; }
+    #listingDetails .seller .qual .num {
+      font-size: 14px;
+      font-weight: 600;
+      margin-left: 5px; }
+  #listingDetails .seller .attributes .attribute {
+    margin: 7px 40px 7px 0; }
+    #listingDetails .seller .attributes .attribute img {
+      height: 30px;
+      margin-right: 5px; }
+    #listingDetails .seller .attributes .attribute .verifyed {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 1.2;
+      width: 60px; }
+  #listingDetails .seller .des {
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 1.7; }
+  #listingDetails .seller .contactButton {
+    margin: 34px 0; }
+    #listingDetails .seller .contactButton .nTickets {
+      margin: 1em 0;
+      font-size: 21px;
+      text-transform: uppercase; }
+      #listingDetails .seller .contactButton .nTickets .caret {
+        color: red;
+        margin-left: 10px;
+        border-top: 8px dashed;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent; }
+    #listingDetails .seller .contactButton .redButton {
+      font-size: 14px;
+      padding: 9px 27px;
+      margin-left: 0;
+      display: inline-block; }
+
+#listingDetails .more-info {
+  margin-top: 60px; }
+  #listingDetails .more-info .seller-info {
+    margin-top: 33px;
+    margin-bottom: 30px; }
+    #listingDetails .more-info .seller-info .profilePic {
+      width: 103px;
+      height: 103px;
+      border-radius: 50%;
+      margin-right: 22px; }
+    #listingDetails .more-info .seller-info .info {
+      width: 80%;
+      display: inline-block;
+      vertical-align: top; }
+      #listingDetails .more-info .seller-info .info .name {
+        font-size: 24px;
+        font-weight: bold; }
+      #listingDetails .more-info .seller-info .info .des {
+        margin-top: 10px;
+        font-size: 14px; }
+  #listingDetails .more-info .reviews {
+    margin-top: 51px; }
+    #listingDetails .more-info .reviews h2 {
+      margin-bottom: 9px; }
+    #listingDetails .more-info .reviews .buttons {
+      position: relative;
+      margin-top: 50px; }
+      #listingDetails .more-info .reviews .buttons .redButton:last-child {
+        position: absolute;
+        right: 0;
+        top: -13px; }
+
+#listingDetails .otherLike {
+  margin-top: 203px; }
+
+@media screen and (max-width: 993px) {
+  #listingDetails .seller .des {
+    width: 100%; }
+  #listingDetails .seller .attributes .attribute {
+    margin: 7px 30px 7px 0; }
+  #listingDetails .more-info .seller-info .info {
+    width: 100%; } }
+
+#selfProfile .reviesContainer .mCol {
+  padding-top: 56px; }
+
+#selfProfile .reviesContainer h2 {
+  margin-top: 0; }
+
+#selfProfile .stars {
+  margin-left: 14px;
+  display: inline-block;
+  vertical-align: bottom; }
+  #selfProfile .stars .star {
+    width: 23px;
+    height: 23px; }
+
+#selfProfile .otherLike {
+  margin-top: 185px; }
+
+#savedEvents.mainCotainer .row h2 {
+  padding: 0 15px;
+  width: 100%;
+  text-transform: uppercase; }
+
+.upcoming_card {
+  display: inline-block;
+  margin: 0.5%;
+  background: white;
+  box-shadow: 4px 18px 30px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+  width: 555px;
+  vertical-align:top;
+  height:100%;}
+  .upcoming_card .info {
+    padding: 35px;
+    box-sizing: border-box;
+    width: 60%;
+    display: table-cell;
+    vertical-align: top; }
+    .upcoming_card .info .date {
+      color: #7a22a3;
+      font-weight: 600;
+      padding-bottom: 15px;
+      font-size: 14px; }
+    .upcoming_card .info .title {
+      color: #1f292e;
+      font-size: 30px;
+      padding-bottom: 15px; }
+    .upcoming_card .info .des {
+      font-size: 14px;
+      color: #9495a6;
+      padding-bottom: 45px; }
+    .upcoming_card .info .attending {
+      font-size: 14px;
+      color: #1f292e;
+      font-weight: 600;
+      padding-bottom: 5px; }
+    .upcoming_card .info .peoplePics {
+      margin-bottom: 35px;
+      height: 40px;
+      overflow: hidden; }
+      .upcoming_card .info .peoplePics .rPic:first-child {
+        margin-left: 0; }
+    .upcoming_card .info .buttons .redButton:first-child {
+      margin-left: 0; }
+  .upcoming_card .image {
+    background: url("../../assets/images/Justin.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 40%;
+    height: 0;
+    height: 100%;
+    display: table-cell;
+    vertical-align: top;
+    position: relative; }
+    .upcoming_card .image .tag {
+      background: #7a22a3;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 0.7px;
+      padding: 6px 10px;
+      border-radius: 3px 0 0 3px;
+      position: absolute;
+      top: 0;
+      right: 0; }
+
+@media screen and (max-width: 1151px) {
+  .upcoming_card {
+    margin: 1em auto;
+    display: block; } }
+
+@media screen and (max-width: 582px) {
+  .upcoming_card {
+    width: 100%;
+    height: auto; }
+    .upcoming_card .info {
+      padding: 25px; }
+      .upcoming_card .info .buttons a {
+        text-align: center;
+        margin: 1em 0;
+        display: block; }
+    .upcoming_card .image {
+      height: 0;
+      padding-bottom: 100%;
+      background-position: 20%; } }
+
+.recentListingMin {
+  position: relative; }
+  .recentListingMin .row {
+    margin-left: 0;
+    margin-right: 0; }
+  .recentListingMin .minIcon {
+    position: absolute;
+    right: -12px; }
+  .recentListingMin .white-rectangle-search {
+    background: white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 0 0 0 0;
+    overflow: hidden;
+    transition: box-shadow .25s ease; }
+    .recentListingMin .white-rectangle-search:hover {
+      box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.2); }
+    .recentListingMin .white-rectangle-search.sold {
+      background: #eeedf2; }
+      .recentListingMin .white-rectangle-search.sold .redButton {
+        background: #c8c7cc;
+        border-color: #c8c7cc;
+        padding: 4px 20px;
+        cursor: auto; }
+    .recentListingMin .white-rectangle-search .listingContainer {
+      padding: 0; }
+    .recentListingMin .white-rectangle-search .imageCont {
+      padding-left: 0; }
+    .recentListingMin .white-rectangle-search .image {
+      min-height: 100%; }
+    .recentListingMin .white-rectangle-search .info {
+      color: #1f292e; }
+      .recentListingMin .white-rectangle-search .info > div:first-child {
+        padding-right: 0;
+        padding-left: 30px; }
+      .recentListingMin .white-rectangle-search .info > div:last-child {
+        padding: 0; }
+      .recentListingMin .white-rectangle-search .info > div > div {
+        padding: 15px 0; }
+      .recentListingMin .white-rectangle-search .info .name {
+        font-size: 16px;
+        font-weight: 600; }
+      .recentListingMin .white-rectangle-search .info .date {
+        font-size: 12px; }
+      .recentListingMin .white-rectangle-search .info .price {
+        color: #59b365;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center; }
+      .recentListingMin .white-rectangle-search .info .tickets {
+        text-align: center; }
+        .recentListingMin .white-rectangle-search .info .tickets .x {
+          font-size: 16px;
+          font-weight: bold; }
+        .recentListingMin .white-rectangle-search .info .tickets .des {
+          font-size: 10px; }
+      .recentListingMin .white-rectangle-search .info .starCont {
+        text-align: center; }
+        .recentListingMin .white-rectangle-search .info .starCont .details {
+          display: inline-block;
+          vertical-align: top; }
+          .recentListingMin .white-rectangle-search .info .starCont .details .name {
+            font-size: 10px; }
+        .recentListingMin .white-rectangle-search .info .starCont .stars .star {
+          display: inline-block;
+          vertical-align: top;
+          background: url("/static/images/star.svg");
+          width: 11px;
+          height: 11px; }
+      .recentListingMin .white-rectangle-search .info .buttons {
+        text-align: center;
+        padding: 0.7em 0; }
+    .recentListingMin .white-rectangle-search .redButton {
+      font-size: 11px;
+      padding: 4px 11px; }
+
+@media screen and (max-width: 1156px) {
+  .recentListingMin .white-rectangle-search .info .name {
+    font-size: 14px; }
+  .recentListingMin .white-rectangle-search .info .date {
+    font-size: 10px; } }
+
+@media screen and (max-width: 768px) {
+  .recentListingMin .white-rectangle-search .info > div:last-child {
+    padding-left: 15px;
+    padding-right: 0; }
+  .recentListingMin .white-rectangle-search .info > div > div {
+    padding: 0; }
+  .recentListingMin .white-rectangle-search .info .starCont {
+    text-align: left; }
+    .recentListingMin .white-rectangle-search .info .starCont .details .name {
+      font-size: 8px; }
+  .recentListingMin .white-rectangle-search .image {
+    min-height: 80px; } }
+
+@media screen and (max-width: 620px) {
+  .recentListingMin {
+    width: 110%;
+    position: relative;
+    left: -5%; } }
+
+@media screen and (max-width: 500px) {
+  .recentListingMin .white-rectangle-search .image {
+    position: relative;
+    right: 1em; } }
+
+@media screen and (max-width: 378px) {
+  .recentListingMin .white-rectangle-search .redButton {
+    font-size: 8px; }
+  .recentListingMin .white-rectangle-search .image {
+    right: 2em; }
+  .recentListingMin .white-rectangle-search .info > div:first-child {
+    padding-left: 15px; }
+  .recentListingMin .white-rectangle-search .info .date {
+    font-size: 10px; }
+  .recentListingMin .white-rectangle-search .info .tickets {
+    font-size: 12px; }
+  .recentListingMin .white-rectangle-search .info .starCont .rPic {
+    display: none; } }
+
+.recentListing.sold {
+  background: #eeedf2;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  height: 70px;
+  color: #1f292e;
+  transition: box-shadow .25s ease;
+  cursor: auto; }
+  .recentListing.sold a:not(.redButton) {
+    color: #1f292e; }
+  .recentListing.sold:hover {
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.2); }
+  .recentListing.sold .recentInfo, .recentListing.sold .recentButtons {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%; }
+  .recentListing.sold .recentInfo {
+    width: 60%; }
+    .recentListing.sold .recentInfo .artist {
+      margin-right: 1%;
+      height: 70px;
+      width: 70px; }
+    .recentListing.sold .recentInfo .realName {
+      display: inline-block;
+      vertical-align: middle;
+      width:150px;
+    }
+      .recentListing.sold .recentInfo .realName .name {
+        font-weight: 600;
+        font-size: 16px; }
+      .recentListing.sold .recentInfo .realName .date {
+        font-size: 13px; }
+  .recentListing.sold .recentButtons {
+    padding-top: 15px;
+    width: 38%; }
+    .recentListing.sold .recentButtons .starCont {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 10px; }
+      .recentListing.sold .recentButtons .starCont .details {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        top: 6px;
+        margin: 0 2em 0 1em; }
+      .recentListing.sold .recentButtons .starCont .star {
+        width: 10px;
+        height: 10px; }
+    .recentListing.sold .recentButtons .infoCont {
+      padding-top: 0.5em;
+      float: right; }
+  .recentListing.sold .infoCont {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 70px;
+    height: 100%; }
+    .recentListing.sold .infoCont .details {
+      display: inline-block;
+      vertical-align: middle; }
+    .recentListing.sold .infoCont .tickets, .recentListing.sold .infoCont .price {
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      top: 15px;
+      margin: 0 1.7em; }
+    .recentListing.sold .infoCont .price {
+      font-size: 22px;
+      color: #59b365;
+      font-weight: bold; }
+    .recentListing.sold .infoCont .x {
+      font-weight: bold; }
+    .recentListing.sold .infoCont .des {
+      font-size: 10px; }
+    .recentListing.sold .infoCont .sellerName {
+      font-weight: 600;
+      font-size: 10px;
+      position: relative;
+      top: 7px; }
+    .recentListing.sold .infoCont .star {
+      height: 10px;
+      width: 10px;
+      position: relative;
+      top: -3px; }
+    .recentListing.sold .infoCont .redButton {
+      display: inline-block;
+      text-align: center;
+      background: #c8c7cc;
+      border-color: #c8c7cc;
+      padding: 4px 20px;
+      cursor: auto; }
+
+@media screen and (max-width: 1100px) {
+  .recentListing.sold .infoCont .tickets, .recentListing.sold .infoCont .price {
+    margin: 0 1em; } }
+
+@media screen and (max-width: 991px) {
+  .recentListing.sold .infoCont .tickets, .recentListing.sold .infoCont .price {
+    margin: 0 1.5em; } }
+
+@media screen and (max-width: 620px) {
+  .recentListing.sold {
+    width: 110%;
+    position: relative;
+    left: -5%; } }
+
+@media screen and (max-width: 718px) {
+  .recentListing.sold {
+    height: auto; }
+    .recentListing.sold .infoCont {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      min-height: 60px; }
+    .recentListing.sold .recentButtons {
+      text-align: center; }
+      .recentListing.sold .recentButtons .infoCont {
+        padding-top: 2.3em;
+        float: none;
+        width: 80%; } }
+
+@media screen and (max-width: 392px) {
+  .recentListing.sold .infoCont {
+    width: 90%;
+    text-align: right; }
+    .recentListing.sold .infoCont .price, .recentListing.sold .infoCont .tickets {
+      margin: 0 1em; }
+  .recentListing.sold .recentInfo .realName .name, .recentListing.sold .recentInfo .realName .date {
+    font-size: .9em; } }
+
+@media screen and (max-width: 320px) {
+  .recentListing.sold .infoCont {
+    width: 100%; }
+  .recentListing.sold .recentInfo .realName .name, .recentListing.sold .recentInfo .realName .date {
+    font-size: .7em; }
+  .recentListing.sold .rPic {
+    display: none; }
+  .recentListing.sold .recentButtons .infoCont {
+    padding-top: 1.5em; } }
+
+.recentListing {
+  background: white;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  height: 70px;
+  color: #1f292e;
+  transition: box-shadow .25s ease; }
+  .recentListing a:not(.redButton) {
+    color: #1f292e; }
+  .recentListing:hover {
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.2); }
+  .recentListing .recentInfo, .recentListing .recentButtons {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%; }
+  .recentListing .recentInfo {
+    width: 68%; }
+    .recentListing .recentInfo .artist {
+      margin-right: 1%;
+      height: 70px;
+      width: 70px; }
+    .recentListing .recentInfo .realName {
+      display: inline-block;
+      vertical-align: middle;
+      width:180px;
+    }
+      .recentListing .recentInfo .realName .name {
+        font-weight: 600;
+        font-size: 16px; }
+      .recentListing .recentInfo .realName .date {
+        font-size: 13px; }
+  .recentListing .recentButtons {
+    padding-top: 15px;
+    width: 30%; }
+    .recentListing .recentButtons .starCont {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 10px; }
+      .recentListing .recentButtons .starCont .details {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        top: 6px;
+        margin: 0 2em 0 1em; }
+      .recentListing .recentButtons .starCont .star {
+        width: 10px;
+        height: 10px; }
+    .recentListing .recentButtons .infoCont {
+      padding-top: 0.5em;
+      float: right; }
+  .recentListing .infoCont {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 70px;
+    height: 100%; }
+    .recentListing .infoCont .details {
+      display: inline-block;
+      vertical-align: middle; }
+    .recentListing .infoCont .tickets, .recentListing .infoCont .price {
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      top: 15px;
+      margin: 0 1.7em; }
+    .recentListing .infoCont .price {
+      font-size: 22px;
+      color: #59b365;
+      font-weight: bold;
+      width:50px;}
+    .recentListing .infoCont .x {
+      font-weight: bold; }
+    .recentListing .infoCont .des {
+      font-size: 10px; }
+    .recentListing .infoCont .sellerName {
+      font-weight: 600;
+      font-size: 10px;
+      position: relative;
+      top: 7px; }
+    .recentListing .infoCont .star {
+      height: 10px;
+      width: 10px;
+      position: relative;
+      top: -3px; }
+    .recentListing .infoCont .redButton {
+      padding: 4px 10px;
+      display: inline-block;
+      text-align: center; }
+
+@media screen and (max-width: 1100px) {
+  .recentListing .infoCont .tickets, .recentListing .infoCont .price {
+    margin: 0 1em; } }
+
+@media screen and (max-width: 991px) {
+  .recentListing .infoCont .tickets, .recentListing .infoCont .price {
+    margin: 0 1.5em; } }
+
+@media screen and (max-width: 620px) {
+  .recentListing {
+    width: 110%;
+    position: relative;
+    left: -5%; } }
+
+@media screen and (max-width: 718px) {
+  .recentListing {
+    height: auto; }
+    .recentListing .infoCont {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      min-height: 60px; }
+    .recentListing .recentButtons {
+      text-align: center; }
+      .recentListing .recentButtons .infoCont {
+        padding-top: 2.3em;
+        float: none;
+        width: 80%; } }
+
+@media screen and (max-width: 392px) {
+  .recentListing .infoCont {
+    width: 90%;
+    text-align: right; }
+    .recentListing .infoCont .price, .recentListing .infoCont .tickets {
+      margin: 0 1em; }
+  .recentListing .recentInfo .realName .name, .recentListing .recentInfo .realName .date {
+    font-size: .9em; } }
+
+@media screen and (max-width: 320px) {
+  .recentListing .infoCont {
+    width: 100%; }
+  .recentListing .recentInfo .realName .name, .recentListing .recentInfo .realName .date {
+    font-size: .7em; }
+  .recentListing .rPic {
+    display: none; }
+  .recentListing .recentButtons .infoCont {
+    padding-top: 1.5em; } }
+
+.MayLikeCard {
+  background: white;
+  padding: 0;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 30px; }
+  .MayLikeCard .info {
+    padding: 20px;
+    padding-bottom: 10px;
+    width: 70%;
+    display: table-cell;
+    vertical-align: top; }
+    .MayLikeCard .info .date {
+      font-size: 11px;
+      color: #7a22a3;
+      font-weight: 600;
+      margin-bottom: 6px; }
+    .MayLikeCard .info .artist {
+      font-size: 24px;
+      margin-bottom: 7px; }
+    .MayLikeCard .info .des {
+      color: #9495a6;
+      font-size: 11px;
+      margin-bottom: 25px; }
+    .MayLikeCard .info .attending {
+      font-size: 11px;
+      color: #7a22a3;
+      font-weight: 600; }
+    .MayLikeCard .info .rPic {
+      width: 24px;
+      height: 24px; }
+    .MayLikeCard .info .buttons .redButton {
+      display: block;
+      text-align: center;
+      margin: 10px 0px; }
+  .MayLikeCard .image {
+    display: table-cell;
+    vertical-align: top;
+    width: 30%;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden; }
+    .MayLikeCard .image .over {
+      background-image: linear-gradient(to bottom, rgba(122, 34, 163, 0), rgba(122, 34, 163, 0.8));
+      position: absolute;
+      text-transform: uppercase;
+      text-align: center;
+      color: white;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      left: 0; }
+      .MayLikeCard .image .over .text {
+        position: absolute;
+        bottom: 33px;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-weight: bold; }
+        .MayLikeCard .image .over .text .from {
+          font-size: 13px; }
+        .MayLikeCard .image .over .text .price {
+          font-size: 24px; }
+    .MayLikeCard .image img {
+      position: absolute;
+      top: -9999px;
+      bottom: -9999px;
+      left: -9999px;
+      right: -9999px;
+      margin: auto;
+      height: 100%; }
+
+@media screen and (max-width: 620px) {
+  .MayLikeCard {
+    width: 110%;
+    position: relative;
+    left: -5%; } }
+
+@media screen and (max-width: 320px) {
+  .MayLikeCard .info .buttons .redButton {
+    padding: 9px 30px; } }
+
+.venue_card {
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 30px; }
+  .venue_card .headerImage {
+    height: 149px;
+    width: 100%;
+    overflow: hidden;
+    position: relative; }
+    .venue_card .headerImage img {
+      position: absolute;
+      top: -9999px;
+      bottom: -9999px;
+      left: -9999px;
+      right: -9999px;
+      margin: auto;
+      width: 100%; }
+  .venue_card .info {
+    padding: 20px; }
+    .venue_card .info .col {
+      display: table-cell;
+      vertical-align: top; }
+    .venue_card .info .col1 {
+      width: 60%; }
+    .venue_card .info .col2 {
+      width: 40%; }
+    .venue_card .info .city {
+      font-size: 27px;
+      font-weight: 600;
+      padding-bottom: 6px; }
+    .venue_card .info .des {
+      font-size: 11px;
+      color: #9495a6;
+      padding-bottom: 33px;
+      width: 90%; }
+    .venue_card .info .nEvents {
+      font-weight: 600;
+      font-size: 14px;
+      color: #7a22a3; }
+    .venue_card .info .prox {
+      padding-bottom: 13px;
+      font-size: 12px;
+      margin-top: -2px; }
+    .venue_card .info .upcoming {
+      font-size: 12px;
+      font-weight: 600;
+      padding-bottom: 18px; }
+      .venue_card .info .upcoming .title {
+        color: #7a22a3; }
+    .venue_card .info .redButton {
+      font-size: 11px;
+      margin: 0; }
+    .venue_card .info .adress {
+      font-size: 10px;
+      padding-bottom: 5px; }
+    .venue_card .info .getDir {
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      color: #ee190b;
+      font-weight: bold; }
+      .venue_card .info .getDir:hover {
+        cursor: pointer;
+        text-decoration: none;
+        color: #ba1209; }
+    .venue_card .info .map {
+      margin-top: 5px;
+      width: 100%; }
+
+@media screen and (max-width: 375px) {
+  .venue_card .info .redButton {
+    font-size: 8px; } }
+
+#priceRange {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.listFilter .submit-button {
+  height: 45px;
+  margin-top: 15px;
+}
+.listFilter {
+  padding: 25px;
+  background: #f1f5f7; }
+  .listFilter label {
+    color: #9495a6;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .listFilter .rangeContainer {
+    margin-bottom: 22px; }
+    .listFilter .rangeContainer .rangeBG {
+      background: white;
+      border: 1px solid #1f292e;
+      border-radius: 3px;
+      height: 15px;
+      width: 100%;
+      margin-bottom: 4px; }
+      .listFilter .rangeContainer .rangeBG .slider {
+        width: 98%;
+        left: 1px;
+        position: relative;
+        top: -2px; }
+        .listFilter .rangeContainer .rangeBG .slider .slider-track {
+          background: none;
+          height: 6px; }
+        .listFilter .rangeContainer .rangeBG .slider .slider-selection {
+          background: #9495a6;
+          border-radius: 3px; }
+        .listFilter .rangeContainer .rangeBG .slider .slider-handle {
+          background: white;
+          border: 1px solid #1f292e;
+          margin-top: -7px; }
+    .listFilter .rangeContainer .nums {
+      font-size: 13px;
+      font-weight: 600; }
+      .listFilter .rangeContainer .nums > span:last-child {
+        float: right; }
+  .listFilter select {
+    width: 120px;
+    height: 45px;
+    border-radius: 3px;
+    background-color: #f1f5f7;
+    border: solid 1px #1f292e; }
+    .listFilter select.large {
+      width: 200px; }
+  .listFilter .days {
+    margin-bottom: 135px; }
+  .listFilter .month {
+    margin-bottom: 27px; }
+
+.legendFeat {
+  text-align: center;
+  width: 100%; }
+  .legendFeat .legend.small {
+    text-align: left;
+    padding-left: 1em; }
+  .legendFeat .row {
+    margin-right: 0;
+    margin-left: 0; }
+    .legendFeat .row .col-xs-12 {
+      padding: 0; }
+  .legendFeat .buyingRow {
+    width: 90%;
+    margin: 0 auto; }
+  .legendFeat .legend {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #9495a6;
+    font-weight: 600;
+    letter-spacing: 1px; }
+  .legendFeat .feat {
+    margin-top: 41px; }
+    .legendFeat .feat img {
+      width: 40px;
+      margin-right: 20px; }
+    .legendFeat .feat .info {
+      width: 74%;
+      vertical-align: top;
+      display: inline-block;
+      text-align: left; }
+      .legendFeat .feat .info .title {
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 1px; }
+      .legendFeat .feat .info .des {
+        font-size: 14px;
+        color: #9495a6; }
+
+@media screen and (max-width: 993px) {
+  .legendFeat .row {
+    width: 90%;
+    margin: 0 auto; } }
+
+.venue_main_card {
+  background: white;
+  border: solid 1px #dadfe6;
+  border-radius: 3px;
+  height: 364px; }
+  .venue_main_card .row {
+    height: 100%; }
+  .venue_main_card .image {
+    height: 100%;
+    padding-left: 0;
+    overflow: hidden; }
+    .venue_main_card .image img {
+      top: -9999px;
+      bottom: -9999px;
+      left: -9999px;
+      right: -9999px;
+      margin: auto;
+      height: 140%; }
+    .venue_main_card .image .over {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-image: linear-gradient(to top, #000000, rgba(122, 34, 163, 0)); }
+      .venue_main_card .image .over .imageInfo {
+        position: relative;
+        padding-left: 15px; }
+        .venue_main_card .image .over .imageInfo div {
+          position: absolute;
+          color: white;
+          text-align: center; }
+        .venue_main_card .image .over .imageInfo .place {
+          line-height: 33px;
+          left: 0;
+          top: 14px;
+          background: #7a22a3;
+          width: 114px;
+          height: 35px;
+          border-radius: 0 3px 3px 0;
+          font-size: 14px;
+          font-weight: bold;
+        text-transform:uppercase;}
+        .venue_main_card .image .over .imageInfo .type {
+          left: 35px;
+          top: 251px;
+          font-size: 10px;
+          color: #1f292e;
+          letter-spacing: 0.8px;
+          padding: 3px 6px;
+          background: #f1f5f7;
+          border-radius: 3px;
+        text-transform:uppercase;}
+        .venue_main_card .image .over .imageInfo .artist {
+          top: 276px;
+          left: 35px;
+          font-size: 48px;
+          font-weight: bold; }
+  .venue_main_card .info {
+    padding: 20px 15px 30px 15px; }
+    .venue_main_card .info .icons {
+      padding-bottom: 20px; }
+      .venue_main_card .info .icons img {
+        margin-right: 20px; }
+    .venue_main_card .info .des {
+      font-size: 12px;
+      padding-bottom: 26px; }
+    .venue_main_card .info .reviewContainer {
+      padding: 0; }
+    .venue_main_card .info .reviews {
+      font-size: 12.6px;
+      font-weight: 600;
+      padding-bottom: 15px; }
+      .venue_main_card .info .reviews .stars {
+        padding-bottom: 4px; }
+        .venue_main_card .info .reviews .stars .star {
+          display: inline-block;
+          vertical-align: top;
+          background: url("/static/images/star.svg") no-repeat;
+          background-size: auto 100%;
+          height: 18px;
+          width: 18px; }
+          .venue_main_card .info .reviews .stars .star.empty {
+            background: url("/static/images/star.svg") no-repeat;
+            background-size: auto 99%; }
+    .venue_main_card .info .labelButtons {
+      color: #ee190b;
+      font-size: 10px;
+      letter-spacing: 1px;
+      font-weight: bold; }
+      .venue_main_card .info .labelButtons .labelButton {
+        margin-bottom: 9px;
+        height: 20px; }
+        .venue_main_card .info .labelButtons .labelButton img {
+          margin-right: 11px;
+          width: 20px;
+          height: 20px; }
+    .venue_main_card .info .reviewText {
+      font-size: 12px;
+      font-style: italic;
+      padding-bottom: 60px; }
+    .venue_main_card .info .redButton {
+      margin: 0;
+      padding: 8px 10px; }
+      .venue_main_card .info .redButton img {
+        margin-left: 20px; }
+    .venue_main_card .info .adress {
+      font-size: 13px;
+      padding-bottom: 5px; }
+    .venue_main_card .info .getDir {
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      color: #ee190b;
+      font-weight: bold; }
+    .venue_main_card .info .map {
+      margin-top: 5px;
+      width: 100%;
+      height: 240px;
+      pointer-events: none; }
+
+@media screen and (max-width: 993px) {
+  .venue_main_card {
+    overflow-x: hidden;
+    height: auto; }
+    .venue_main_card .image {
+      height: 364px; }
+      .venue_main_card .image img {
+        height: auto;
+        width: 100%; }
+      .venue_main_card .image .over .imageInfo .place {
+        left: 15px; }
+      .venue_main_card .image .over .imageInfo .type {
+        left: 30px; }
+      .venue_main_card .image .over .imageInfo .artist {
+        left: 30px; }
+    .venue_main_card .info .reviewContainer {
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+@media screen and (max-width: 768px) {
+  .venue_main_card .info .adress {
+    margin-top: 2em; } }
+
+@media screen and (max-width: 510px) {
+  .venue_main_card .image {
+    height: 364px; }
+    .venue_main_card .image img {
+      height: 100%;
+      width: auto; } }
+
+@media screen and (max-width: 375px) {
+  .venue_main_card .image .over .imageInfo .artist {
+    font-size: 40px; } }
+
+.upcomingList {
+  background: white;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05); }
+  .upcomingList:hover {
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.2); }
+  .upcomingList .row {
+    margin: 0; }
+  .upcomingList .ticketsCont {
+    margin-top: 1.8em;
+    text-align: center; }
+  .upcomingList .fromCont {
+    margin-top: 1.4em; }
+  .upcomingList .artistCont {
+    margin-top: 1em; }
+  .upcomingList .date {
+    background: purple;
+    height: 70px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 3px 0; }
+    .upcomingList .date .month {
+      font-size: 12px; }
+    .upcomingList .date .numberDay {
+      font-size: 26px;
+      line-height: 30px;
+      font-weight: bold; }
+    .upcomingList .date .day {
+      font-size: 12px; }
+  .upcomingList .artist {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 2px; }
+  .upcomingList .hour {
+    font-size: 14px; }
+  .upcomingList .from {
+    font-size: 12px;
+    font-weight: 600; }
+    .upcomingList .from .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #59b365; }
+  .upcomingList .redButton {
+    margin: 0;
+    padding: 4px 9px; }
+
+@media screen and (max-width: 559px) {
+  .upcomingList .artistCont {
+    margin-top: 0; } }
+
+@media screen and (max-width: 420px) {
+  .upcomingList .redButton {
+    font-size: 8px; }
+  .upcomingList .artist {
+    font-size: 14px; }
+  .upcomingList .hour {
+    font-size: 10px; }
+  .upcomingList .fromCont, .upcomingList .ticketsCont {
+    padding: 0; } }
+
+.profile_card {
+  background: white;
+  text-align: center;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  padding: 20px 27px 30px 27px;
+  max-width: 360px;
+  margin: 0 auto; }
+  .profile_card .name {
+    font-size: 24px; }
+  .profile_card .profilePic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 15px auto auto;
+    overflow: hidden; }
+    .profile_card .profilePic img {
+      width: 100%; }
+  .profile_card .des {
+    padding-top: 30px;
+    font-size: 14px; }
+  .profile_card .attributes {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .profile_card .attributes .attribute {
+      text-align: left;
+      width: 120px;
+      margin: 0 3px 40px 3px; }
+      .profile_card .attributes .attribute img {
+        height: 30px;
+        margin-right: 5px; }
+      .profile_card .attributes .attribute .title {
+        text-transform: uppercase;
+        display: inline-block;
+        vertical-align: top;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 1.2; }
+  .profile_card .editButton {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 30px; }
+  .profile_card .redButton {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    padding: 9px 27px; }
+
+@media screen and (max-width: 320px) {
+  .profile_card .redButton {
+    font-size: 14px; } }
+
+.reviewListing {
+  margin: 22px 0; }
+  .reviewListing .author, .reviewListing .review {
+    display: inline-block;
+    vertical-align: top; }
+  .reviewListing .author {
+    width: 19%;
+    text-align: center; }
+    .reviewListing .author img {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      margin-bottom: 9px; }
+    .reviewListing .author .name {
+      font-weight: bold;
+      font-size: 14px; }
+  .reviewListing .review {
+    width: 80%;
+    padding: 20px;
+    background: white;
+    border-radius: 0 10px 10px;
+    font-size: 14px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+    position: relative; }
+    .reviewListing .review .trian {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      left: -23px; }
+    .reviewListing .review .reviewText {
+      margin-bottom: 28px; }
+    .reviewListing .review .date {
+      color: #9495a6;
+      font-size: 12px;
+      font-style: italic; }
+
+@media screen and (max-width: 567px) {
+  .reviewListing .author {
+    width: 30%; }
+  .reviewListing .review {
+    width: 70%; } }
+
+#venueForm {
+  margin-bottom: 3em; }
+  #venueForm .input {
+    margin-bottom: 25px; }
+    #venueForm .input label {
+      font-weight: 600;
+      font-size: 14px; }
+    #venueForm .input input, #venueForm .input textarea {
+      border: 1px solid #dadfe6;
+      width: 100%;
+      padding: 11px;
+      margin-bottom: 15px;
+      height: inherit;
+      border-radius: inherit;
+    }
+    #venueForm .input textarea {
+      height: 100px;
+    }
+    #venueForm .input .hint {
+      font-size: 14px; }
+    #venueForm .input .redText {
+      margin-top: 15px; }
+    #venueForm .input .dragUpload {
+      height: 160px;
+      border-radius: 3px;
+      border: dashed 1px #9495a6;
+      position: relative; }
+      #venueForm .input .dragUpload .noImage {
+        font-size: 15px;
+        color: #9495a6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        #venueForm .input .dragUpload .noImage img {
+          margin-bottom: 7px; }
+        #venueForm .input .dragUpload .noImage .message {
+          margin: 0 auto;
+          width: 103px; }
+    #venueForm .input .two_inputs {
+      display: inline-block;
+      vertical-align: top; }
+      #venueForm .input .two_inputs.first {
+        width: 60%; }
+        #venueForm .input .two_inputs.first input {
+          width: 90%; }
+      #venueForm .input .two_inputs.last {
+        width: 40%; }
+    #venueForm .input .attributes .attribute {
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 10px; }
+      #venueForm .input .attributes .attribute:not(:last-child) {
+        margin-right: 10px; }
+      #venueForm .input .attributes .attribute input[type="checkbox"], #venueForm .input .attributes .attribute input[type="radio"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden; }
+        #venueForm .input .attributes .attribute input[type="checkbox"]:checked + .mCheck, #venueForm .input .attributes .attribute input[type="radio"]:checked + .mCheck {
+          background: #7a22a3; }
+          #venueForm .input .attributes .attribute input[type="checkbox"]:checked + .mCheck .name, #venueForm .input .attributes .attribute input[type="radio"]:checked + .mCheck .name {
+            color: white; }
+          #venueForm .input .attributes .attribute input[type="checkbox"]:checked + .mCheck img, #venueForm .input .attributes .attribute input[type="radio"]:checked + .mCheck img {
+            display: none; }
+          #venueForm .input .attributes .attribute input[type="checkbox"]:checked + .mCheck .w, #venueForm .input .attributes .attribute input[type="radio"]:checked + .mCheck .w {
+            display: block; }
+      #venueForm .input .attributes .attribute .mCheck {
+        cursor: pointer;
+        min-width: 100px;
+        height: 100px;
+        padding: 18px;
+        background: white; }
+      #venueForm .input .attributes .attribute .name {
+        color: #7a22a3;
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 1em; }
+      #venueForm .input .attributes .attribute img {
+        height: 30px;
+        margin: 0 auto; }
+      #venueForm .input .attributes .attribute .w {
+        display: none; }
+  #venueForm .redButton {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    padding: 9px 27px;
+    margin: 40px 0; }
+
+.messagesCard {
+  background: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  padding: 10px 12px; }
+  .messagesCard .head .contact,
+  .messagesCard .head .selling,
+  .messagesCard .head .commit {
+    display: inline-block;
+    vertical-align: middle; }
+  .messagesCard .head .contact, .messagesCard .head .commit {
+    font-size: 12px;
+    font-weight: bold;
+    width: 25%; }
+  .messagesCard .head .contact .redButton {
+    padding: 7px 5px;
+    display: inline-block;
+    text-align: center; }
+  .messagesCard .head .commit {
+    padding-right: 10px;
+    text-align: right;
+    cursor: pointer; }
+    .messagesCard .head .commit .redButton {
+      padding: 7px 10px;
+      display: inline-block;
+      text-align: center; }
+    .messagesCard .head .commit .mHidden {
+      display: none;
+      margin-top: 10px; }
+  .messagesCard .head .selling {
+    width: 50%;
+    text-align: center; }
+    .messagesCard .head .selling .accent {
+      font-weight: normal; }
+    .messagesCard .head .selling .for {
+      font-size: 20px;
+      font-weight: 400; }
+    .messagesCard .head .selling .venue {
+      font-size: 13px; }
+  .messagesCard .messages {
+    overflow-y: scroll;
+    height: 456px; }
+  .messagesCard .inputContainer {
+    height: 62px;
+    position: relative; }
+    .messagesCard .inputContainer input {
+      border: 1px solid #dadfe6;
+      border-radius: 3px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      padding-left: 63px; }
+    .messagesCard .inputContainer img {
+      position: absolute;
+      top: 20px;
+      left: 28px; }
+    .messagesCard .inputContainer .redText {
+      cursor: pointer;
+      position: absolute;
+      right: 27px;
+      top: 20px; }
+
+@media screen and (max-width: 568px) {
+  .messagesCard .head .contact .redButton,
+  .messagesCard .head .commit .redButton {
+    font-size: 8px; }
+  .messagesCard .messages {
+    height: auto; } }
+
+.messagesItem {
+  margin: 22px 0; }
+  .messagesItem.send {
+    text-align: right; }
+    .messagesItem.send .trian {
+      top: 18px;
+      right: -8px; }
+    .messagesItem.send .messageText {
+      border-radius: 10px 0 10px 10px; }
+  .messagesItem.receive .trian {
+    top: 18px;
+    left: -8px; }
+  .messagesItem.receive .messageText {
+    border-radius: 0 10px 10px; }
+  .messagesItem .author, .messagesItem .message {
+    display: inline-block;
+    vertical-align: top; }
+  .messagesItem .author {
+    width: 10%;
+    text-align: center;
+    position: relative;
+    top: 1.4em; }
+    .messagesItem .author img {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      margin-bottom: 9px; }
+    .messagesItem .author .name {
+      font-weight: bold;
+      font-size: 14px; }
+  .messagesItem .message {
+    font-size: 12px;
+    width: 50%;
+    position: relative; }
+    .messagesItem .message .trian {
+      width: 9px;
+      height: 14px;
+      position: absolute; }
+    .messagesItem .message .messageText {
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+      padding: 10px;
+      color: white;
+      text-align: left;
+      background: #7a22a3;
+      margin-bottom: 28px; }
+    .messagesItem .message .date {
+      font-size: 10px;
+      color: #9495a6;
+      font-style: italic;
+      margin-bottom: 4px; }
+
+@media screen and (max-width: 567px) {
+  .messagesItem .author {
+    width: 30%; }
+  .messagesItem .message {
+    width: 70%; } }
+
+.conversationCard {
+  background: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  padding: 10px 25px;
+  margin-bottom: 1px;
+  position: relative; }
+  .conversationCard.commit {
+    background: #d1ffd7; }
+  .conversationCard.review {
+    background: #fffdd4; }
+  .conversationCard a, .conversationCard a:visited, .conversationCard a:hover {
+    color: inherit; }
+  .conversationCard .minIcon {
+    position: absolute;
+    right: -12px;
+    top: 0; }
+  .conversationCard .author img {
+    border-radius: 50%;
+    height: 54px;
+    width: 54px;
+    margin-right: 16px; }
+  .conversationCard .author .data {
+    display: inline-block;
+    vertical-align: middle; }
+    .conversationCard .author .data .name {
+      font-size: 14px;
+      font-weight: bold; }
+    .conversationCard .author .data .last-seen {
+      font-size: 12px;
+      color: #9495a6; }
+  .conversationCard .cat {
+    display: inline-block;
+    background: #7a22a3;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 1px 10px;
+    border-radius: 10px;
+    margin-bottom: 6px; }
+    .conversationCard .cat.sell {
+      background: #11c929; }
+    .conversationCard .cat.none {
+      background: transparent; }
+    .conversationCard .cat.completed {
+      background: #C3C3C3; }
+    .conversationCard .cat.mHidden {
+      display: none; }
+  .conversationCard .message {
+    font-size: 14px; }
+  .conversationCard .messageCont {
+    margin-top: 5px; }
+  .conversationCard .date {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #9495a6; }
+
+@media screen and (max-width: 768px) {
+  .conversationCard .cat {
+    display: none; }
+    .conversationCard .cat.mHidden {
+      display: block;
+      max-width: 80px;
+      margin: 0 auto; } }
+
+#sellerModal .modal-content {
+  background: #f5faff; }
+  #sellerModal .modal-content .modal-header {
+    border: none;
+    font-size: 18px;
+    text-align: center; }
+  #sellerModal .modal-content .modal-body .sellerPic {
+    margin-right: 16px;
+    border-radius: 50%;
+    width: 68px;
+    height: 68px; }
+  #sellerModal .modal-content .modal-body .sellerInfo {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 600; }
+    #sellerModal .modal-content .modal-body .sellerInfo .event {
+      font-size: 16px;
+      margin-bottom: 5px; }
+    #sellerModal .modal-content .modal-body .sellerInfo .date {
+      font-size: 12px;
+      font-weight: 100; }
+    #sellerModal .modal-content .modal-body .sellerInfo .price {
+      font-weight: bold;
+      color: #59b365;
+      letter-spacing: -0.3px; }
+  #sellerModal .modal-content .modal-body .usefulCont {
+    padding-left: 0; }
+  #sellerModal .modal-content .modal-body .usefull .title {
+    color: #7a22a3;
+    font-size: 12px;
+    font-weight: 600; }
+  #sellerModal .modal-content .modal-body .usefull ul {
+    padding: 9px 0 0 20px; }
+    #sellerModal .modal-content .modal-body .usefull ul li {
+      line-height: 18px;
+      font-size: 12px; }
+  #sellerModal .modal-content .modal-body .nTickets {
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    font-size: 14px;
+    margin-bottom: 10px; }
+    #sellerModal .modal-content .modal-body .nTickets .caret {
+      color: #ee190b;
+      margin: 0 5px; }
+    #sellerModal .modal-content .modal-body .nTickets .dropdown, #sellerModal .modal-content .modal-body .nTickets .for {
+      display: inline-block;
+      vertical-align: top; }
+    #sellerModal .modal-content .modal-body .nTickets .for {
+      text-transform: uppercase;
+      font-weight: 400; }
+  #sellerModal .modal-content .modal-body textarea {
+    border: 1px solid #dadfe6;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px 15px; }
+  #sellerModal .modal-content .modal-body .trian {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 18px;
+    bottom: 6px; }
+  #sellerModal .modal-content .modal-footer {
+    border: none; }
+    #sellerModal .modal-content .modal-footer .mPic {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      float: left;
+      position: relative;
+      left: 10px;
+      bottom: 20px; }
+
+@media screen and (max-width: 767px) {
+  #sellerModal .modal-body .container-fluid {
+    text-align: center; }
+  #sellerModal .modal-body .usefull li {
+    list-style: none; } }
+
+#completedModal .you_bought {
+  margin-bottom: 10px; }
+  #completedModal .you_bought .copy {
+    text-transform: uppercase; }
+
+#completedModal .feedback {
+  padding: 63px 0 10px 0; }
+
+#completedModal .feedBackButton {
+  text-align: right;
+  text-decoration: underline; }
+
+#completedModal .from {
+  padding-bottom: 10px; }
+
+#completedModal .buyerInfo2 {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 600; }
+
+.event_main_card {
+  background: white;
+  border: solid 1px #dadfe6;
+  border-radius: 3px;
+  height: 226px; }
+  .event_main_card .row {
+    height: 100%; }
+  .event_main_card .image {
+    height: 100%;
+    padding-left: 0;
+    overflow: hidden; }
+    .event_main_card .image img {
+      top: -9999px;
+      bottom: -9999px;
+      left: -9999px;
+      right: -9999px;
+      margin: auto;
+      width: 110%;
+      height: auto; }
+    .event_main_card .image .over {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-image: linear-gradient(to top, #000000, rgba(122, 34, 163, 0)); }
+      .event_main_card .image .over .imageInfo {
+        position: relative;
+        padding-left: 15px; }
+        .event_main_card .image .over .imageInfo div {
+          position: absolute;
+          color: white;
+          text-align: center; }
+        .event_main_card .image .over .imageInfo .place {
+          line-height: 33px;
+          left: 0;
+          top: 14px;
+          background: #7a22a3;
+          width: 114px;
+          height: 35px;
+          border-radius: 0 3px 3px 0;
+          font-size: 14px;
+          font-weight: bold; }
+        .event_main_card .image .over .imageInfo .artist {
+          top: 100px;
+          left: 35px;
+          font-size: 48px;
+          font-weight: bold; }
+        .event_main_card .image .over .imageInfo .sponsor {
+          font-weight: 100;
+          font-size: 32px;
+          top: 170px;
+          left: 35px; }
+  .event_main_card .info {
+    padding: 20px 15px 30px 15px; }
+    .event_main_card .info .icons {
+      padding-bottom: 20px; }
+      .event_main_card .info .icons img {
+        margin-right: 20px; }
+    .event_main_card .info .des {
+      font-size: 12px;
+      padding-bottom: 26px; }
+    .event_main_card .info .reviewContainer {
+      padding: 0; }
+    .event_main_card .info .reviews {
+      font-size: 12.6px;
+      font-weight: 600;
+      padding-bottom: 15px; }
+      .event_main_card .info .reviews .stars {
+        padding-bottom: 4px; }
+        .event_main_card .info .reviews .stars .star {
+          display: inline-block;
+          vertical-align: top;
+          background: url("/static/images/star.svg") no-repeat;
+          background-size: auto 100%;
+          height: 18px;
+          width: 18px; }
+          .event_main_card .info .reviews .stars .star.empty {
+            background: url("/static/images/star.svg") no-repeat;
+            background-size: auto 99%; }
+    .event_main_card .info .labelButtons {
+      color: #ee190b;
+      font-size: 10px;
+      letter-spacing: 1px;
+      font-weight: bold; }
+      .event_main_card .info .labelButtons .labelButton {
+        margin-bottom: 9px;
+        height: 20px; }
+        .event_main_card .info .labelButtons .labelButton img {
+          margin-right: 11px;
+          width: 20px;
+          height: 20px; }
+    .event_main_card .info .reviewText {
+      font-size: 12px;
+      font-style: italic;
+      padding-bottom: 60px; }
+    .event_main_card .info .redButton {
+      margin: 0;
+      padding: 8px 10px; }
+      .event_main_card .info .redButton img {
+        margin-left: 20px; }
+    .event_main_card .info .adress {
+      font-size: 13px;
+      padding-bottom: 5px; }
+    .event_main_card .info .getDir {
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      color: #ee190b;
+      font-weight: bold;
+    margin-bottom:5px;}
+    .event_main_card .info .map {
+      margin-top: 5px;
+      width: 100%;
+      height: 120px;
+      pointer-events: none; }
+
+@media screen and (max-width: 993px) {
+  .venue_main_card {
+    overflow-x: hidden;
+    height: auto; }
+    .venue_main_card .image {
+      height: 364px; }
+      .venue_main_card .image img {
+        height: auto;
+        width: 100%; }
+      .venue_main_card .image .over .imageInfo .place {
+        left: 15px;
+     }
+      .venue_main_card .image .over .imageInfo .type {
+        left: 30px; }
+      .venue_main_card .image .over .imageInfo .artist {
+        left: 30px; }
+    .venue_main_card .info .reviewContainer {
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+@media screen and (max-width: 768px) {
+  .venue_main_card .info .adress {
+    margin-top: 2em; } }
+
+@media screen and (max-width: 510px) {
+  .venue_main_card .image {
+    height: 364px; }
+    .venue_main_card .image img {
+      height: 100%;
+      width: auto; } }
+
+@media screen and (max-width: 375px) {
+  .venue_main_card .image .over .imageInfo .artist {
+    font-size: 40px; } }
+
+.SavedEventsCard {
+  background: white;
+  padding: 0;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-bottom: 30px; }
+  .SavedEventsCard .info {
+    padding: 20px;
+    padding-bottom: 10px;
+    width: 70%;
+    display: table-cell;
+    vertical-align: top; }
+    .SavedEventsCard .info .date {
+      font-size: 11px;
+      color: #7a22a3;
+      font-weight: 600;
+      margin-bottom: 6px; }
+    .SavedEventsCard .info .artist {
+      font-size: 24px;
+      margin-bottom: 7px; }
+    .SavedEventsCard .info .des {
+      color: #9495a6;
+      font-size: 11px;
+      margin-bottom: 25px; }
+    .SavedEventsCard .info .attending {
+      font-size: 11px;
+      color: #7a22a3;
+      font-weight: 600; }
+    .SavedEventsCard .info .rPic {
+      width: 24px;
+      height: 24px; }
+    .SavedEventsCard .info .buttons .redButton {
+      display: block;
+      text-align: center;
+      margin: 10px 0px; }
+  .SavedEventsCard .image {
+    display: table-cell;
+    vertical-align: top;
+    width: 30%;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden; }
+    .SavedEventsCard .image .over {
+      background-image: linear-gradient(to bottom, rgba(122, 34, 163, 0), rgba(122, 34, 163, 0.8));
+      position: absolute;
+      text-transform: uppercase;
+      text-align: center;
+      color: white;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      left: 0; }
+      .SavedEventsCard .image .over .text {
+        position: absolute;
+        bottom: 33px;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-weight: bold; }
+        .SavedEventsCard .image .over .text .from {
+          font-size: 13px; }
+        .SavedEventsCard .image .over .text .price {
+          font-size: 24px; }
+    .SavedEventsCard .image img {
+      position: absolute;
+      top: -9999px;
+      bottom: -9999px;
+      left: -9999px;
+      right: -9999px;
+      margin: auto;
+      height: 100%; }
+
+@media screen and (max-width: 620px) {
+  .SavedEventsCard {
+    width: 110%;
+    position: relative;
+    left: -5%; } }
+
+@media screen and (max-width: 320px) {
+  .SavedEventsCard .info .buttons .redButton {
+    padding: 9px 30px; } }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans'; }
+
+h2 {
+  font-size: 16px;
+  color: #1f292e;
+  letter-spacing: 1px;
+  margin-bottom: 15px; }
+
+.redButton {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: inline;
+  cursor: pointer;
+  background: #ee190b;
+  border: 1px solid #ee190b;
+  border-radius: 3px;
+  margin: 6px;
+  padding: 9px 34px;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: white; }
+  .redButton.outline {
+    background: white;
+    color: #ee190b; }
+    .redButton.outline:hover {
+      background: #ba1209;
+      border-color: #ba1209;
+      color: white; }
+  .redButton:hover {
+    background: #ba1209;
+    border-color: #ba1209;
+    color: white;
+    text-decoration: none; }
+  .redButton a, .redButton a:visited, .redButton a:active, .redButton a:link {
+    color: white;
+    text-decoration: none; }
+
+.hDivider {
+  width: 100%;
+  height: 1px;
+  background: #dadfe6; }
+
+.redText {
+  color: #ee190b !important; }
+  .redText a, .redText a:visited {
+    color: #ee190b; }
+  .redText a:hover {
+    color: #ba1209;
+    text-decoration: none; }
+
+.greenText {
+  color: #11c929;
+  font-weight: bold; }
+
+.stars {
+  display: inline-block;
+  vertical-align: baseline; }
+  .stars .star {
+    display: inline-block;
+    vertical-align: bottom;
+    background: url("/static/images/star.svg") no-repeat;
+    background-size: auto 100%;
+    width: 23px;
+    height: 23px; }
+    .stars .star.empty {
+      background: url("/static/images/star.svg") no-repeat;
+      background-size: auto 99%; }
+
+#tabs.nav-tabs {
+  margin-bottom: 25px; }
+  #tabs.nav-tabs li {
+    margin-right: 30px; }
+    #tabs.nav-tabs li a {
+      color: #9495a6;
+      letter-spacing: 1px;
+      padding: 0;
+      padding-bottom: 9px; }
+      #tabs.nav-tabs li a:hover {
+        color: #1f292e;
+        background: none;
+        border-color: transparent;
+        border-bottom: 3px solid #7a22a3; }
+  #tabs.nav-tabs li.active a {
+    color: #1f292e;
+    background: none;
+    border-color: transparent;
+    border-bottom: 3px solid #7a22a3; }
+
+  .redButton.white {
+    color:white !important;
+  }
+
+  .recentListing a:hover {
+    text-decoration:none;
+  }
+
+.recentListing.profile .recentButtons {
+  width:20%;
+}
+
+.recentListing.profile .recentInfo {
+  width:75%;
+}
+
+.password_reset{
+  margin:24px 0px;
+}
+
+.password_reset input[type=email]{
+  display: block;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  margin-bottom:12px;
+}
+
+.password_reset input[type=submit]{
+  background: #ee190b;
+  color: white;
+  border: 1px solid #ee190b;
+  border-radius: 2.3px;
+  padding:12px;
+  margin:0 0 12px 0;
+}
+
+.password_reset label{
+  display:none;
+}
+
+.errorlist{
+  list-style: none;
+  padding-left: 0;
+  color: #ee190b;
+  font-weight: bold;
+  font-size: 12px;
+}
+

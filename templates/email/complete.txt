@@ -1,0 +1,6 @@
+Hello {{recipient}}, 
+You are receiving this email because you have completed an exchange for the listing: {{listing_name}}.  
+Please take the time to review {{member_name}}:
+Link to review form: {{review_link}}
+Thanks in advance for the feedback. Reviews are helpful for establishing trust in future exchanges. If this is a mistake and the exchange should not have been completed, please contact Listing Sloth.
+-Listing Sloth

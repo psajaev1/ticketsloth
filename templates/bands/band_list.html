@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+{% block title %}Bands{% endblock %}
+{% block content %}
+    <div class="row">
+        <h2 class="col-md-8">All Bands</h2>
+        <h2 class="col-md-4 text-right">
+            <a class="btn-default btn" href="{% url 'create_band' %}" role="button">Post a new band</a>
+        </h2>
+    </div>
+    <div class="row">
+        {% for band in band_list %}
+        <div class="col-sm-6 col-md-4">
+            <a href="{{ band.get_absolute_url }}" class="thumbnail">
+                <img src="{% if band.image %}{{ band.image.url }}{% else %}http://placehold.it/350x250{% endif %}" alt="{{ band.name }}">
+
+                <div class="caption">
+                    <h3 class="text-center">{{ band.name }}</h3>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+
+    </div>
+{% if is_paginated %}
+    <div class="pagination text-center row col-md-12">
+        <span class="page-links">
+            {% if page_obj.has_previous %}
+                <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+            {% endif %}
+            <span class="page-current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+            </span>
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">next</a>
+            {% endif %}
+        </span>
+    </div>
+{% endif %}
+
+{% endblock %}

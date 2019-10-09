@@ -1,0 +1,15 @@
+Hello {{recipient}},
+
+You are receiving this email because you have committed to the ticket sale for the listing: {{listing_name}}. 
+
+Here are the details to get in contact with {{buyer_or_seller}} {{member_name}}:
+
+{{contact_email}}
+{{contact_phone}}
+
+When you have both met and completed the sale, please return to ticketsloth and
+write a review about your experience. Reviews help users establish trust for 
+future exchanges.
+
+Thank you, 
+Listing Sloth

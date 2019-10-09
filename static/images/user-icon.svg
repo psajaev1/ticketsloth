@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="19px" viewBox="0 0 16 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>4FD9F129-28A5-4EBE-9376-B51B9B42E9FC</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Signup" transform="translate(-576.000000, -407.000000)" fill="#7A22A3">
+            <g id="Login-Box" transform="translate(555.000000, 382.000000)">
+                <g id="Username-Base-+-Username-+-Shape" transform="translate(21.000000, 22.000000)">
+                    <path d="M15.9822531,18.4935225 C15.5203143,15.5635351 13.0934822,13.348173 10.3256279,12.528812 C11.514955,11.2040597 12.1478774,9.04332164 12.150239,7.57844669 C12.1537815,5.3326851 10.311458,3 7.96326886,3 C5.61507976,3 3.7727562,5.3326851 3.77629868,7.57844669 C3.77866033,9.04973403 4.4167783,11.2228219 5.61626059,12.5461492 C2.8727312,13.3790475 0.476128268,15.5839598 0.01749574,18.4935225 C-0.17238096,19.6985769 1.22618847,20.4984632 2.13117294,20.9081437 C3.90666179,21.7115925 5.93461107,21.9851878 7.86644119,21.9994375 C9.82165164,22.0136873 11.8658963,21.7593291 13.6798801,20.9905548 C14.6306806,20.5872867 16.1832296,19.7684007 15.9822531,18.4935225 L15.9822531,18.4935225 Z" id="user-icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

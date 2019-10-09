@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+{% load socialaccount %}
+{% block title %}Login{% endblock %}
+
+{% block lower_header %}
+    <div class="mainTitle">Welcome Back</div>
+{% endblock %}
+
+
+{% block content %}
+    <section class="mainCotainer" id="login">
+        <article>
+            {% if form.errors %}
+                <h3 class="text-center alert alert-danger">Unable to login. Please check your username and password and try again.</h3>
+            {% endif %}
+            <form class="form-login" method="post" action=".">
+                {% csrf_token %}
+                {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+                <div class="centered">
+                    <div class="font-login">
+                        <div class="line"></div><div class="copy">OR LOGIN WITH EMAIL</div><div class="line"></div>
+                    </div>
+                </div>
+                <div class="inputContainer top-input"><img class="icon_user" src="/static/images/user-icon.svg">
+                    {% render_field form.login class+="form-control form-input" placeholder=form.login.label %}
+                </div>
+                <div class="inputContainer bottom-input"><img class="icon_key"
+                                                              src="/static/images/password-icon.svg">
+                    {% render_field form.password class+="form-control form-input" placeholder=form.password.label %}
+                </div>
+
+                <button class="btn-login txt-login" type="submit">LOGIN</button>
+                <div class="littleButtons">
+{#                    <input id="remember" type="checkbox" value="remember-me"><label#}
+{#                        for="remember">Remember me</label>#}
+                    <a class="right vermillion font12 passm"
+                                                             href="{% url 'account_reset_password' %}">Forgot your
+                    password?</a></div>
+            </form>
+        </article>
+    </section>
+{% endblock %}
+
+{% block javascript %}
+    {% providers_media_js %}
+{% endblock %}

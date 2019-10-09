@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="13px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>F0C5896A-002A-42C8-93B5-9967B30E5D57</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Signup" transform="translate(-576.000000, -626.000000)" fill="#7A22A3">
+            <g id="Login-Box" transform="translate(555.000000, 382.000000)">
+                <g id="Username-Base-+-Username-+-Shape-Copy-2" transform="translate(21.000000, 238.000000)">
+                    <path d="M8,12.4149841 L0,7.69247072 L0,17.1374975 C0,18.0683908 0.761577455,18.8299682 1.69247072,18.8299682 L14.3075293,18.8299682 C15.2384225,18.8299682 16,18.0683908 16,17.1374975 L16,7.69247072 L8,12.4149841 Z M8,11.5936077 L15.8311424,6.97075923 C15.5584959,6.39980525 14.9792938,6 14.3073002,6 L1.69247072,6 C1.02047713,6 0.441504138,6.39980525 0.168628462,6.97075923 L8,11.5936077 Z" id="mail-icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

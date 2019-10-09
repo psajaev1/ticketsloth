@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load staticfiles i18n %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block lower_header %}
+    <div class="mainTitle">{{ title }}</div>
+{% endblock %}
+
+{% block content %}
+    <div class="row col-md-6 ">
+         {% crispy form %}
+    </div>
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/jquery.tagit.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui.min.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/jquery.datetimepicker.css' %}">
+{% endblock %}
+
+
+{% block javascript %}
+
+
+<script src="{% static 'js/jquery.datetimepicker.js' %}"></script>
+
+<script src="{% static 'js/tag-it.min.js' %}"></script>
+<script src="{% static 'js/jquery.mask.min.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.4/jstz.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    setup_autocomplete('event');
+    setup_autocomplete('venue');
+    setup_autocomplete('bands');
+
+    $('#id_phone_n').mask('(000) 000-0000');
+    $('#id_start_time').datetimepicker({
+        scrollInput:false,
+        closeOnDateSelect:true,
+        format:'Y-m-d H:i:00',
+        step:30
+    });
+    $('#id_end_time').datetimepicker({
+        scrollInput:false,
+        closeOnDateSelect:true,
+        format:'Y-m-d H:i:00',
+        step:30
+    });
+    $('#id_event_select').on('blur', function() {
+       if ($('#id_event_select').val() === '') {
+           $('#id_venue').prop('disabled', false);
+           $('#id_bands').prop('disabled', false);
+
+       }
+    });
+
+    function setup_autocomplete(type_arg){
+        $('#id_'+type_arg+'_select').click(function () {
+            $.getJSON('/list/'+type_arg+'/').success(function (data) {
+                $('#id_'+type_arg+'_select').autocomplete({
+                    minLength: 0,
+                    source: data,
+                    focus: function( event, ui ) {
+                        $( '#id_'+type_arg+'_select' ).val( ui.item.label );
+                        return false;
+                    },
+                    select: function( event, ui ) {
+                        if (type_arg==='event') {
+                            $('#id_venue').val('');
+                            $('#id_bands').val('');
+                            $('#id_venue').prop('disabled', true);
+                            $('#id_bands').prop('disabled', true);
+                        }
+                        $( '#id_'+type_arg+'_select' ).val( ui.item.label );
+                        $( '#id_'+type_arg).val( ui.item.id );
+                        return false;
+                    }
+                }).autocomplete( 'instance' )._renderItem = function( ul, item ) {
+                    return $( '<li>' ).append( '<a><strong>' + item.label + '</strong><br>' + item.desc.substring(0,60) + '</a>' )
+                    .appendTo( ul );
+                };
+            });
+        });
+    };
+});
+
+
+
+</script>
+
+{% endblock %}
