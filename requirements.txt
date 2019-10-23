@@ -1,5 +1,5 @@
 # Bleeding edge Django
-django==1.11.17
+django==1.11.23
 
 # Configuration
 django-cache-url==2.0.0
