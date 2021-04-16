@@ -42,7 +42,7 @@ django-localflavor==1.4.1
 gunicorn==19.7.1
 django-mailgun==0.9.1
 django-versatileimagefield==1.10
-django-debug-toolbar==1.8.0
+django-debug-toolbar==1.11.1
 django-storages==1.5.2
 boto3==1.4.4
 django-permanent==1.1.6
